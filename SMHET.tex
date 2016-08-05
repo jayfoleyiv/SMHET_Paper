@@ -1,0 +1,160 @@
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+\pdfoutput=1
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{color,soul}
+% Authors / affiliations
+
+\author{Noor Eldabagh}
+\affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
+\author{Jason Codrington}
+\affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
+\author{Kimberly Fernando}
+\affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
+\author{Jonathan J. Foley IV}
+\affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
+\email{foleyj10@wpunj.edu}
+
+%Title of paper
+\title{Highly-tunable hot-electron distributions from scattering-mediated absorption}
+% Date
+\date{\today}
+
+
+% Being document
+\begin{document}
+
+\begin{abstract}
+
+\end{abstract}
+
+\maketitle
+
+%%\end{document}
+
+
+\section{Introduction}
+
+\section{Theoretical Model}
+-Employ a time-domain multi-scale electrodynamics/quantum mechanics model 
+	- Finite-difference time-domain method is used for the 
+
+\subsection{The Finite-difference time-domain method}
+
+
+\subsection{The Discrete Dipole Approximation}
+
+
+\section{Results}
+
+
+\section{Concluding Remarks}
+
+\section{Methods}
+
+\subsection{Finite-difference time-domain method}
+
+\subsection{Time-dependent configuration-interaction singles method}
+We use the time-dependent configuration interaction singles (TD-CIS) method to elucidate the
+electronic dynamics in the metal nanoparticles driven by the electric fields resulting from 
+dielectric scattering resonances, plasmon resonances, or freely propagating light.  
+The TDCIS equations arise directly from the time-dependent Schr\"odinger equation (TDSE) when the wavefunction
+is written as a superposition of a ground state reference configuration, $|\Phi_0\rangle$, and configurations which are singly excited relative
+to $\Phi_0$,  In the CIS model, the wavefunction has the form
+\begin{equation}
+|\Psi_{CIS}\rangle = c_0 |\Phi_0 \rangle + \sum_{i,a} c_i^a |\Phi_i^a\rangle,
+\end{equation}
+where the configuration $|\Phi_i^a\rangle$ has an electron excited from orbital $i$ to orbital $a$, 
+and $c_0$ and $c_i^a$ are complex expansion coeffients.  Unless otherwise specified, indices $i, j$ will indicate
+orbitals which are occupied in the ground state reference configuration and indices $a, b$ will indicate orbitals
+which are unoocupied in the ground state reference.
+
+Each many-electron configuration is an anti-symmetrized product of one-electron orbitals which are chosen to be energy eigenstates of 
+an appropriate one-electron Hamiltonian, further elaborated in subsequent sections. 
+We neglect electron-electron repulsion in our many-electron Hamiltonian, so the ground state configuration
+can be exactly described by the anti-symmetrized product of the first $N/2$ one-electron orbitals, 
+$|\Phi_0\rangle = |\psi_1 ... \psi_i \psi_j ... \psi_{N/2} \rangle$, where $\psi_q$ denotes the $q^{th}$ one-electron orbital.  
+
+The time-evolution of the wavefunction can be subsumed in the expansion coefficients, which allows the TDSE to be written 
+\begin{equation}\label{TDCIS}
+i\hbar \frac{ d}{dt} {\bf c}(t) = {\bf H}(t) {\bf c}(t)
+\end{equation}
+where ${\bf c}(t)$ is the vector of complex expansion coefficients and ${\bf H}(t)$ is the time-dependent Hamiltonian
+matrix.  The Hamiltonian matrix is comprised of three unique blocks in the CIS model,  
+\begin{equation}
+  {\bf H}(t) 
+  \mbox{=}
+  \begin{pmatrix}
+    \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
+  \langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}
+  \begin{pmatrix} t \\ 0  \end{pmatrix}.
+\end{equation}
+In our work, the Hamiltonian operator has a component for the electronic energy and a component for a dipolar interaction of the electrons with the electric
+field,
+\begin{equation}
+\hat{H}(t) = \hat{H}_{el} - {\bf E}(t) \cdot \hat{\mu},
+\end{equation}
+and derives time-dependence through the time-dependence of the electromagnetic field that interacts
+with the electrons described by the CIS wavefunction.  Both the electronic and dipolar contributions can be written 
+as sums of one-electron terms %% Probably want to include slater rules... also mention that everything is 1-electron
+The specific forms of the components of the Hamiltonian
+operator are covered in more detail in the following sections. 
+
+The multiplication of the Hamiltonian matrix on the coefficient vector generates the gradient of the coefficient vector in time, and 
+a variety of algorithms are known that use this information to propagate the wavefunction in time.  Here we use a symplectic integrator
+described in Ref.{\it Sanz-Serna's paper}.
+
+\subsection{Electronic structure of metal nanospheres}
+For spherical metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-spherical-well
+Hamiltonian, 
+\begin{equation}
+\hat{H}_{PIS} = -\frac{\hbar^2}{2 m r^2} 
+\left(\frac{\partial}{\partial r} \left(r^2 \frac{\partial}{\partial r}\right)
++ \left(\frac{1}{{\rm sin}^2 \theta} 
+\left({\rm sin}\theta \frac{\partial}{\partial \theta}
+\left({\rm sin}\theta \frac{\partial}{\partial \theta} \right)
++ \frac{\partial^2}{\partial \phi^2} \right) \right)
+\right). 
+\end{equation}
+For a particle with radius $R$, the potential is 0 when $r<R$ and infinity with $r \geq R$. 
+The potential is 0 
+The energy eigenstates have the form 
+\begin{equation}
+\psi_{n,l,m}(r,\theta,\phi) = j_l(\alpha r) Y_{l,m}(\theta,\phi),
+\end{equation}
+where $j_l(\alpha r)$ are the spherical Bessel functions are 
+$Y_{l,m}(\theta,\phi)$ are the spherical Harmonics.  
+In our numerical implementation, we use the asymptotic approximation of the spherical Bessel functions 
+$j_l(\alpha r) \approx {\rm cos}(\alpha r - \frac{\pi}{2} (l+1))/r$.  To evaluate the spherical harmonics, we use a recursive 
+algorithm described in Ref. {\it Numerical Recipes in C} to evaluate the associated Legendre polynomials.  The energy eigenfunctions
+must vanish at $r=R$, which leads to the following form for the one-electron orbitals:
+\begin{equation}
+\psi_{n,l,m}(r,\theta,\phi) = 
+\frac{2}{\sqrt{R}} \frac{ {\rm cos}( \frac{\pi}{2} \frac{r}{R} - \frac{\pi}{2} (l+1)  }{r} Y_{l,m} (\theta,\phi).
+\end{equation}
+The energy eigenvalues have the form 
+\begin{equation}
+E_{n,l} = \frac{\hbar^2 \pi^2}{8 m R^2} \left(2 n + l + 2\right)^2.
+\end{equation}
+From the definition of the spherical polar coordinates, the $x$, $y$, and $z$ components of the transition dipole integrals have the form
+\begin{align}
+\mu_x = -e \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} r {\rm sin}\theta {\rm cos}\phi \psi_{n',l',m'}  r^2 {\rm sin}\theta dr d\theta d\phi \\
+\mu_y = -e \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} r {\rm sin}\theta {\rm sin}\phi \psi_{n',l',m'}  r^2 {\rm sin}\theta dr d\theta d\phi \\
+\mu_z = -e \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} r {\rm cos}\theta               \psi_{n',l',m'}  r^2 {\rm sin}\theta dr d\theta d\phi.
+\end{align}
+In this work, we neglect the $x$ and $y$ components of the field and evaluate $mu_z$ numerically, where the integral can be
+simplified to
+\begin{equation}
+\mu_z = \delta_{m,m'} \int_0^R \int_0^{\pi} \frac{2}{\sqrt{R}} \frac{{\rm cos( \frac{\pi}{2} \frac{r}{R} - \frac{\pi}{2} (l+1)  }{r} P_{l'}^{m'}({\rm cos}\theta)  {\rm cos}\theta               \frac{2}{\sqrt{R}} \frac{{\rm cos( \frac{\pi}{2} \frac{r}{R} - \frac{\pi}{2} (l+1)  }{r} P_{l'}^{m'}({\rm cos}\theta)  r^2 {\rm sin}\theta dr d\theta 
+\end{equation}
+\subsection{Electronic structure of metal nanocubes}
+
+\section{Acknowledgement}
+
+\bibliography{SMHET} 
+
+\end{document}
+
