@@ -33,6 +33,23 @@
 
 \begin{abstract}
 
+Light-initiated energetic electron transfer (EET) has attracted considerable attention as an emerging paradigm for 
+photocatalysis and solar energy conversion, and the use of noble metal nanoparticles that support Localized Surface
+Plasmon Resonances (LSPR) has been widely explored as a medium for realizing this paradigm.  It was recently
+shown that composite nanostructures that enable the interplay between dielectric scattering resonances and broad-band
+absorption in small metal nanostructures, a phenomenon termed scattering-mediated absorption, can be 
+used to mediate EET and selective photochemistry with 
+low-intensity light while completely circumventing plasmon excitation.  This observation raises the question as to 
+wether the energetic electrons derived from scattering mediated absorption have unique distributions and dynamics
+compared to their plasmon-derived counterparts, and if so, what implications these differences have for the efficiency 
+and selectivity of EET.  In this work, we develop a multi-scale modelling approach for elucidating the dynamics 
+of energetic electrons derived from scattering mediated absorption and from plasmon excitation.  We show that populations
+and dynamics of energetic electrons derived from scattering mediated absorption can be tuned via simple
+geometric parameters of the composite structures, and also suggest that in some circumstances, energetic electron
+generation may be more efficienty by scattering mediated absorption than by plasmon excitation under the same 
+illumination conditions.
+
+
 \end{abstract}
 
 \maketitle
@@ -41,6 +58,29 @@
 
 
 \section{Introduction}
+
+%% From recent Nordlander paper about "Dirty Plasmons"
+%etallic nanoparticles with strong optically resonant properties behave as nanoscale optical antennas, and have recently shown extraordinary promise as light-driven catalysts. Traditionally, however, heterogeneous catalysis has relied upon weakly light-absorbing metals such as Pd, Pt, Ru, or Rh to lower the activation energy for chemical reactions. Here we show that coupling a plasmonic nanoantenna directly to catalytic nanoparticles enables the light-induced generation of hot carriers within the catalyst nanoparticles, transforming the entire complex into an efficient light-controlled reactive catalyst. In Pd-decorated Al nanocrystals, photocatalytic hydrogen desorption closely follows the antenna-induced local absorption cross-section of the Pd islands, and a supralinear power dependence strongly suggests that hot-carrier-induced desorption occurs at the Pd island surface. When acetylene is present along with hydrogen, the selectivity for photocatalytic ethylene production relative to ethane is strongly enhanced, approaching 40:1. These observations indicate that antenna−reactor complexes may greatly expand possibilities for developing designer photocatalytic substrates.
+
+%plasmon photocatalysis nanoparticle catalysis aluminum
+%Industrial processes depend extensively on heterogeneous catalysts for chemical production and mitigation of environmental pollutants. These processes often rely on metal nanoparticles dispersed into high surface area support materials to both maximize catalytically active surface area and for the most cost-effective use of expensive catalysts such as Pd, Pt, Ru, or Rh (1, 2). However, catalytic processes utilizing transition metal nanoparticles are often energy-intensive, relying on high temperatures and pressures to maximize catalytic activity. A transition from extreme, high-temperature conditions to low-temperature activation of catalytically active transition metal nanoparticles could have widespread impact, substantially reducing the current energy demands of heterogeneous catalysis.
+
+%Light-driven chemical transformations offer an attractive and ultimately sustainable alternative to traditional high-temperature catalytic reactions. Metallic plasmonic nanostructures are a new paradigm in photoactive heterogeneous catalysts (3⇓⇓–6). Plasmonic nanoparticles uniquely couple electron density with electromagnetic radiation, leading to a collective oscillation of the conduction electrons in resonance with the frequency of incident light, known as a localized surface plasmon resonance (LSPR). These resonances lead to enhanced light absorption in an area much larger than the physical cross-section of the nanoparticle, and such optical antenna effects result in strongly enhanced electromagnetic fields near the nanoparticle surface. An LSPR can be damped through radiative reemission of a photon, or nonradiative Landau damping with the creation of energetic “hot” carriers: electrons above the Fermi energy of the metal and/or holes below the Fermi energy. In this context, “hot” refers to carriers of an energy that is a significant fraction of the plasmon energy that would not be generated thermally at ambient temperature. Plasmonic metal nanoparticles have been shown to induce chemical transformations directly on their surfaces, through either phonon-driven or charge-carrier-driven mechanisms in Au (7⇓⇓–10), Ag (11, 12), Cu (13, 14), and, recently, Al (15) nanoparticles. Although these “good” plasmonic metals show initial promise for plasmon-induced photocatalytic chemistry, in general they are not universally good catalytic materials despite finding niche applications in a few industrial processes.
+
+%In comparison, noncoinage transition metals have historical precedence as excellent catalysts, yet are generally considered poor plasmonic metals, because they suffer from large nonradiative damping, which results in broad spectral features and weak absorption across the visible region of the spectrum (16⇓–18). Many catalytic transition metal nanoparticles (Pt, Pd, Rh, Ru, etc.) possess LSPRs in the UV, but this is disadvantageous for photocatalysis because of poor overlap with conventional laser sources or, alternatively, with the solar spectrum. Increasing transition metal nanoparticle size redshifts optical absorption, but it increases cost and reduces surface area, and therefore catalytic activity. Recently, it has been shown that plasmonic nanoparticles can be used to increase optical absorption in adjacent nanoparticles (19⇓⇓–22), for instance, enabling hydrogen detection (23, 24).
+
+%Previous reports of photocatalytic transformation in plasmonic metal nanoparticle systems rely on the metal to double as both the light-harvesting antenna and the catalytic surface. Here we show that the optical antenna effects of plasmonic metal nanoparticles can be used to directly enhance light absorption and modify the catalytic activity of directly adjacent reactive metal nanoparticle surfaces. This “antenna−reactor” complex, with the antenna and reactor composed of two distinct materials, is illustrated schematically in Fig. 1A. We note that the experimental antenna−reactor complexes designed for this work are separated by 2- to 4-nm dielectric aluminum oxide interfacial layers rather than complete separation as illustrated in Fig. 1A. Here we show that antenna−reactor complexes, focusing on Al as the antenna and Pd as the reactor, can be used to photoactively drive catalytic reactions under mild, ambient temperature and pressure conditions. Such modular, heterometallic complexes offer greatly increased degrees of freedom in the design of photocatalytic complexes, expanding the possible materials that can be used as light-driven catalysts. Manipulating the materials used for both the plasmonic antenna and catalytic reactor can theoretically lead to numerous possibilities for controlling plasmon-assisted absorption enhancements and specific reactivities (SI Appendix, Figs. S1 and S2).
+
+
+as the optical resonance for initiating energetic ('hot') electron transfer; 
+however, several fundamental impediments for widespread utilization of LSPR for photocatalysis or solar energy 
+conversion have been identified. In particular, the energy distributions of hot electrons derived from LSPR 
+are broad and difficult to control; moreover, the rapid decay of these energetic electrons 
+limits their transfer efficiency. Additionally, the most promising materials for LSPR are noble metals, 
+which are not earth abundant or cost-effective.
+
+We will discuss a novel class of composite nanostructures that enable an interplay between spectrally-narrow scattering resonances in dielectric nanostructures and spectrally broad absorption in small metal nanoclusters. These composites have been shown to have highly-tunable photophysics, and show promise for mediating photocatalytic reactions under low-light conditions. We will present results from multi-scale theory and simulation that elucidate the SMHET mechanism, including scattering-mediated absorption which can be spectrally tuned via geometric paramters of the composite nanostructures, and the resulting electronic dynamics in metal nanoclusters that we conjecture are responsible for the observed photocatalytic properties of these composite nanostructures.
+
 
 \section{Theoretical Model}
 -Employ a time-domain multi-scale electrodynamics/quantum mechanics model 
