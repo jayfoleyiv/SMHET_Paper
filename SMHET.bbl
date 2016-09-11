@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{32}
+\begin{mcitethebibliography}{34}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -250,11 +250,11 @@ Kumarasinghe,~C.~S.; Premaratne,~M.; Bao,~Q.; Agrawal,~G.~P. Theoretical
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Saavedra \latin{et~al.}(2016)Saavedra, Asenjo-Garcia, and
-  de~Abajo]{SAG_ACSPhotonics_2016}
-Saavedra,~J. R.~M.; Asenjo-Garcia,~A.; de~Abajo,~F. J.~G. Hot-Electron Dynamics
-  and Thermalization in Small Metallic Nanoparticles. \emph{ACS Photonics}
-  \textbf{2016}, \emph{0}, null\relax
+\bibitem[Saavedra \latin{et~al.}(2016)Saavedra, Asenjo-Garcia, and { Garc\'ia
+  de Abajo}]{SAG_ACSPhotonics_2016}
+Saavedra,~J. R.~M.; Asenjo-Garcia,~A.; { Garc\'ia de Abajo},~F.~J. Hot-Electron
+  Dynamics and Thermalization in Small Metallic Nanoparticles. \emph{ACS
+  Photonics} \textbf{2016}, \emph{0}, null\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -295,6 +295,20 @@ Scholl,~J.~A.; Koh,~A.~L.; Dionne,~J.~A. Quantum plasmon resonances of
 Press,~W.~H.; Teukolsky,~S.~A.; Vetterling,~W.~T.; Flannery,~B.~P.
   \emph{Numerical Recipes in C: The Art of Scientific Computing}, 2nd ed.;
   Cambridge University Press, 1992\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Johnson and Christy(1972)Johnson, and Christy]{JC_PRB_1972}
+Johnson,~P.~B.; Christy,~R.~W. Optical constants of noble metals. \emph{Phys.
+  Rev. B} \textbf{1972}, \emph{6}, 4370\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Palik(1998)]{Palik}
+Palik,~E.~D. \emph{Handbook of optical constants of solids}; Academic Press,
+  1998\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

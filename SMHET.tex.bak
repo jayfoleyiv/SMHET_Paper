@@ -23,7 +23,7 @@
 \email{foleyj10@wpunj.edu}
 
 %Title of paper
-\title{Highly tunable hot-electron distributions from scattering-mediated absorption}
+\title{Highly-tunable hot-electron distributions from scattering-mediated absorption}
 % Date
 \date{\today}
 
@@ -53,25 +53,23 @@ separate page at the end of the document.
 
 \begin{abstract}
 
-Light-initiated generation of energetic carriers has attracted considerable attention as a paradigm for 
-photocatalysis and solar energy conversion, and the use of noble metal nanoparticles that support localized surface
-plasmon resonances has been widely explored as a medium for realizing this paradigm.  It was recently
+Light-initiated energetic electron transfer (EET) has attracted considerable attention as an emerging paradigm for 
+photocatalysis and solar energy conversion, and the use of noble metal nanoparticles that support Localized Surface
+Plasmon Resonances (LSPR) has been widely explored as a medium for realizing this paradigm.  It was recently
 shown that composite nanostructures that enable the interplay between dielectric scattering resonances and broad-band
 absorption in small metal nanostructures, a phenomenon termed scattering-mediated absorption, can be 
-used to mediate energetic carrier transfer and selective photochemistry with 
-low-intensity light while completely circumventing plasmon resonance.  The 
-unique ways that dielectric scattering modifies incident optical fields in space and time compared suggests
-that energetic carriers derived from scattering mediated absorption will have unique distributions and dynamics
-compared to their plasmon-derived counterparts.  This observation holds important potential for expanding the
-pallete of materials that can be utilized for hot-carrier mediated photochemistry, and also suggests
-the possibility of discovering new photochemical pathways owing to the unique distributions and dynamics
-of energetic carriers that can arise from scattering mediated absorption.
-In this work, we develop a multi-scale modeling approach for elucidating hot-carrier dynamics initiated
-by scattering-mediated absorption both with and without the use of plasmonic nanoparticles. 
-Our calculations reveal that the dynamics of energetic carriers derived from scattering mediated absorption can be tuned via simple
+used to mediate EET and selective photochemistry with 
+low-intensity light while completely circumventing plasmon excitation.  This observation raises the question as to 
+whether the energetic electrons derived from scattering mediated absorption have unique distributions and dynamics
+compared to their plasmon-derived counterparts, and if so, what implications these differences have for the efficiency 
+and selectivity of EET.  In this work, we develop a multi-scale modelling approach for elucidating the dynamics 
+of energetic electrons derived from scattering mediated absorption and from plasmon excitation.  We show that populations
+and dynamics of energetic electrons derived from scattering mediated absorption can be tuned via simple
 geometric parameters of the composite structures, and also suggest that in a variety of circumstances, energetic electron
 generation may be more efficient via scattering mediated absorption than by plasmon excitation under the same 
 illumination conditions.
+
+
 \end{abstract}
 
 %%\maketitle
@@ -110,12 +108,12 @@ Considering this, an incredible opportunity exists to identify new classes of st
 namely exceptional light-harvesting potential, while also offering greater selectivity and efficiency in energy transfer, as well as tunable surface chemistry for enhanced catalytic activity.  
 Ideally, such structures could be made mostly, if not entirely, from cost-effective materials.  Recent progress towards this aim has been made by designing hybrid 
 nanostructures that effectively delegate the light-harvesting and catalytic functions to separate components of the structure.  Recently, Halas and co-workers 
-demonstrated an antenna-reactor concept that leverages the near-field enhancement from aluminum plasmons to generate energetic carriers on 
-palladium islands and showed the efficacy of this strategy for the photcatalytic transformation of acetylene to ethylene~\cite{SZZ_PNAS_2016}.
+demonstrated an antenna-reactor concept that levarages the nearfield enhancement from aluminum plasmons to generate energetic carriers on 
+paladium islands and showed the efficacy of this strategy for the photcatalytic transformation of acetylene to ethyelene~\cite{SZZ_PNAS_2016}.
 Two of the current authors, along with Sun and co-workers, demonstrated a phenomena known as scattering-mediated absorption where dielectric
-scattering resonances in SiO$_2$ ionospheres were utilized to induce resonant absorption in non-plasmonic platinum nanoparticles in SiO$_2$/Pt nanohybrids~\cite{ZHX_NatPhoton_2016}.
+scattering resonances in SiO$_2$ nanospheres were utlized to induce resonant absorption in non-plasmonic platinum nanoparticles in SiO$_2$/Pt nanohybrids~\cite{ZHX_NatPhoton_2016}.
 The scattering-mediated absorption (SMA) phenomena was also observed to induce highly selective photocatalytic oxidation of benzyl alcohol to benzaldehyde~\cite{ZHX_NatPhoton_2016}.
-Zhang {\it et al.} independently described a SMA phenomenon in Au-TiO$_2$ nanohybrids that leveraged so-called whispering gallery modes to 
+Zhang {\it et al.} indendently described a SMA phenomenon in Au-TiO$_2$ nanohybrids that leveraged so-called whispering gallery modes to 
 enhance plasmonic and non-plasmonic absorption in gold nanoparticles, and demonstrated these structures efficacy for photocatalytic water splitting~\cite{ZJM_ACSNano_2016}.
 Interestingly, hot-carrier transfer was implicated in the photocatalytic mechanisms that resulted from these SMA phenomena~\cite{ZHX_NatPhoton_2016,ZJM_ACSNano_2016}.
 The prospect of using SMA in hybrid dielectric/metal nanostructures to initiate hot-carrier generation and transfer is particularly 
@@ -126,23 +124,23 @@ to those produced by plasmon excitation.
 The push to identify novel structures for mediating hot-carrier generation and transfer has been paralleled by 
 efforts to develop theoretical methodologies to elucidate these processes.  The underlying electronic
 structure has been treated both within free-electron models confined by potential wells~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_2015,SAG_ACSPhotonics_2016} (here called
-``particle-in-a-well" (PIW) models), as well as by {\it ab initio} approaches~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
+"particle-in-a-well (PIW) models), as well as by {\it ab initio} approaches~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
 Using PIW models, Govorov and co-workers developed a theory of 
 hot-electron generation within the framework of time-dependent perturbation theory that
 has elucidated a variety of shape- and size-dependent factors for optimizing 
-the hot-carrier generation~\cite{GZG_JPCC_2013,ZG_JPCC_2014}.  A similar approach was also pursued by Kumarasinghe {\it et al.} suggesting
-that nanorods are exceptionally good structures for hot-carrier generation~\cite{KPB_SciRep_2015}.  Garc\'ia de Abajo and co-workers recently described a 
+the hot-carrier generation~\cite{GZG_JPCC_2013,ZG_JPCC_2014}.  A similar approach was also persued by Kumarasinghe {\it et al.} suggesting
+that nanorods are exceptionally good structures for hot-carrier generation~\cite{KPB_SciRep_2015}.  Garc${\rm \acute{i}}$a de Abajo and co-workers recently described a 
 quantum master equation approach with an underlying PIW model that elucidated a number of key factors that influence
 hot-carrier excitation and decay dynamics~\cite{SAG_ACSPhotonics_2016}.  The utilization of {\it ab initio} approaches by Sundararaman {\it et al} 
-has also provided valuable insights into the role that a metals band-structure plays
-in determining the efficiency of hot-carrier generation, and particularly in the asymmetry between hot-electron
-and hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
+has also provided valuable insights into the role that a metals bandstructure plays
+in determining the efficiency of hot-carrier generation, and particularly in the assymetry between hot-electron
+nd hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
 and found negligible impact on hot-carrier generation and dynamics in Ag nanospheres resulting from electron correlation~\cite{MLK_ACSNano_2014}, 
 though Bernardi {\it et al} have demonstrated that many-body effects are important in the hot-carrier dynamics resulting
 from surface plasmon polaritons in gold and silver~\cite{BMN_NatComm_2015}.
 
 We develop an novel approach for studying hot-carrier dynamics that may arise from arbitrary electromagnetic
-fields, including the unique near-fields that arise from SMA on hybrid dielectric-metal nanoparticles and plasmon resonance
+fields, including the unique nearfields that arise from SMA on hybrid dielectric-metal nanoparticles and plasmon resonance
 on noble metal nanoparticles.
 %In this work, we take a first step towards investigating the unique distributions and dynamics of energetic carriers produced via SMA in 
 %dielectric sphere/metal nanoparticle hybrid structures by developing a multi-scale modelling framework
@@ -155,8 +153,8 @@ We consider the electronic degrees of freedom on the metal nanoparticle subject 
 \hat{H}(t) = \hat{H}_{el} - {\bf E}(t) \cdot \hat{\mu}, 
 \end{equation}
 where the specific form of ${\bf E}(t)$ derives from a rigorous time-domain electrodynamics calculation with a realistic model
-of the nanostructures in question and $\hat{H}_{el}$ describes non-interacting electrons confined by an infinite potential well.  
-Through appropriate choice of the shape of the potential well, nanocubes and nanospheres are modeled.  We compute the time-domain field 
+of the nanostructure in question and $\hat{H}_{el}$ describes non-interacting electrons confined by an infinite potential well.  
+Through appropriate choice of the shape of the potential well, nanocubes and nanospheres are modelled.  We compute the time-domain field 
 using a commercial simulator based on the finite-difference time-domain method~\cite{Lumerical}; more details are given in 
 the supplemental information.    
 
@@ -166,9 +164,9 @@ includes all singly-excited configurations,
 |\Psi_{CIS}\rangle = c_0 |\Phi_0 \rangle + \sum_{i,a} c_i^a |\Phi_i^a\rangle,
 \end{equation}
 where the configuration $|\Phi_i^a\rangle$ has an electron excited from orbital $i$ to orbital $a$, 
-and $c_0$ and $c_i^a$ are complex expansion coefficients.  Unless otherwise specified, indices $i, j$ will indicate
+and $c_0$ and $c_i^a$ are complex expansion coeffients.  Unless otherwise specified, indices $i, j$ will indicate
 orbitals which are occupied in the ground state reference configuration and indices $a, b$ will indicate orbitals
-which are unoccupied in the ground state reference.  
+which are unoocupied in the ground state reference.  
 
 The time-evolution of the wavefunction can be subsumed in the expansion coefficients, which allows the TDSE to be written 
 \begin{equation}\label{TDCIS}
@@ -208,7 +206,7 @@ the nanocube model, $n, l, m$ for the nanosphere model) so that the orbital ener
 spatial and temporal shaping of the incident field, and the corresponding
 impact on electronic dynamics in a Au nanocube. Panel {\bf (a)} shows
 the absorption of a 2nm gold nanocube and the scattering of of 270 nm and
-685 nm TiO$_2$ nanospheres that display predominately Fabry-Perot and Whispering Gallery Mode visible resonances, respectively.  These spectra are overlaid
+685 nm TiO$_2$ nanospheres that display predominately Fabry-Perot and Whispering Gallery Mode visible resonances, respectively.  These spectra are overlayed
 with the dipole-allowed transitions in our quantum mechanical Au NC model.  Both dielectric scattering resonances show more efficient generation of hot-electrons (Panel {\bf (b)} and hot-holes (Panel {\bf (c)}) compared to LSPR in this case.}
 \end{center}
 \end{figure}
@@ -217,14 +215,14 @@ with the dipole-allowed transitions in our quantum mechanical Au NC model.  Both
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{figs/Au_WGM_Spectrum_and_Trajectories.png}
-\caption{Fine-shaping of the spatial and temporal shaping of the incident field
+\caption{Fine-shaping of the spatial and temporal shaping of the indicent field
 through the geometry of the dielectric nanosphere.  Panel {\bf (b)} shows
 the scattering spectra of a size progression of TiO$_2$ nanospheres that display
 predominately Whispering Gallery Mode visible resonances.  The
 685nm nanosphere's scattering spectra has the best overlap with the dipole-allowed
 transitions in the Au NC model, and this structure shows most efficient
 generation of hot-electrons in the most energetic orbitals included in our
-active space (Panel {\bf (b)}), and more efficiently generation of
+active space (Panel {\bf (b)}), and more efficienty generation of
 hot holes in the lowest energy orbitals included in our active space (Panel 
 {\bf (c)}).   }
 \end{center}
@@ -234,7 +232,7 @@ hot holes in the lowest energy orbitals included in our active space (Panel
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{figs/Pt_WGM_Spectrum_and_Trajectories.png}
-\caption{Progressive scattering spectra of TiO$_2$ nanospheres overlaid with the dipole-allowed transitions of the Pt NC Model show partial overlap between
+\caption{Progressive scattering spectra of TiO$_2$ nanospheres overlayed with the dipole-allowed transitions of the Pt NC Model show partial overlap between
 the resonances of the 685 nm, 690 nm, and 695 nm nanospheres 
 (Panel {\bf (a)}).  The 685 nm nanosphere's scattering again shows
 greatest efficacy for generating hot-electrons in the most energetic
@@ -299,7 +297,7 @@ orbitals and hot-holes in the lowest energy orbitals in our Pt NC model.}
 \subsection{Electronic structure of metal nanospheres}
 For spherical metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-spherical-well. 
 For a particle confined by a spherical well with radius $R$, the potential is 0 when $r<R$ and infinity with $r \geq R$, so that only kinetic energy contributes
-to the energetic.
+to the energetics.
 The energy eigenstates have the form~\cite{KS_JCP_1983,SKD_Nature_2012} 
 \begin{equation}
 \psi_{n,l,m}(r,\theta,\phi) = j_l(\alpha r) Y_{l,m}(\theta,\phi),
@@ -355,38 +353,7 @@ The transition dipole integrals can be evaluated analytically,
 \frac{L (\pi (n_x + n_x'){\rm sin}(\pi(n_x + n_x'))+{\rm cos}(\pi(n_x+n_x'))-1) }{\pi^2 (n_x + n_x')^2 }
 \end{align*}
 
-\subsection{Finite-difference time-domain calculations}
-A commercial simulator based on the finite-difference time-domain method~\cite{Lumerical} was used to compute the electric field, $E(t)$
-1 \AA away from the nanoparticle surface in each of the scenarios considered.  The displacement
-was taken along the $z$-axis, corresponding to the polarization direction of incident light since the strongest
-near-field enhancement is expected along this direction.  A grid spacking of 1 \AA in $x, y, and z$ was utilized
-in a cubic region extending 1 nm beyond the metal NP surface, and a non-uniform mesh was utilized otherwise with $dx, dy, dz \leq 20 nm$.
-For each composite structure, a nanoparticle was placed at the surface of the dielectric nanosphere at an angle of
-20$^{\circ}$ with respect to the propagation axis of the incident light. In all simulations, light propagates
-along the $x$ axis and is polarized along the $z$ axis.  The metal nanoparticles are centered at $y=0$.  
-A total-field scattered-field source was used to illuminate the structures.  The FDTD simulations were terminated when the 
-ratio of the total energy in the simulation volume to the total energy injected by the illumination source falls below
-$1e-6$.  Because the WGMs are higher quality factor resonances, longer time is typically required for these simulations
-are compared to the plasmonic particles alone.  
-
-The resulting time-domain fields were fed into our TDCIS code, allowing us to simulate the electronic dynamics
-driven by rigorously-computed nearfields from scattering and plasmon resonances, which show strong spatiotemporal modification relative
-to freely propagating light.  The electric field was scaled by a factor $E_0 \approx 614,000,000 V/m$ so that the peak power
-of the illumination source is $1e15 W/m^2$.  The electric field was sampled at intervals of approximately 0.0028 fs for all simulations, which leads
-to a time-step that ensures stability of
-the wavefunction propagation with the relevant energy scales of our simulations.  Our wavefunction propagation scheme
-requires the evaluation of the electric field at intermediate times between these timesteps, and we use a simple update
-scheme based on centered-finite differences to approximate the electric fields at these times.  As an example, if the 
-electric field is known at times $t_1$, $t_2 = t_1 + dt$, and $t_3 = t_1 + 2\cdot dt$ where $dt = 0.0028$, and knowledge
-of the field is required at some time $t_m = t_2 + m\cdot dt$ where $m$ is non-integer, $E(t_m)$ is estimated as follows: 
-\begin{equation}
-{\bf E}(t_m) =  {\bf E}(t_2) + \frac{{\bf E}(t_3)-{\bf E}(t_1) }{t_3 - t_1 } \cdot m\cdot dt.
-\end{equation}
-
-The permittivity for Au comes from the data set by Johnson and Christy~\cite{JC_PRB_1972}, and the permitivity for Pt comes from the
-data set by Palik~\cite{Palik}.  We assume a static dielectric constant of 2.6 for TiO$_2$ in this work, and neglect its UV absorption. 
-
-\section{Acknowledgment}
+\section{Acknowledgement}
 This work was performed, in part, utilizing resources at
 the Center for Nanoscale Materials, a US Department of Energy, Office of Science, Office of
 Basic Energy Sciences User Facility (contract no. DE-AC02-06CH11357).
