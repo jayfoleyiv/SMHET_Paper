@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  10 SEP 2016 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  12 SEP 2016 07:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,47 +408,48 @@ Package gensymb Warning: Not defining \micro.
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 75.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 72.
 
 
-Underfull \vbox (badness 10000) detected at line 75
+Underfull \vbox (badness 10000) detected at line 72
  []
 
-[2] [3] [4] [5] [6] [7]
-<figs/Au_AllThree_Spectrum_and_Trajectories.png, id=42, 660.21657pt x 365.86688
+[2] [3] [4] [5] [6]
+<figs/Au_AllThree_Spectrum_and_Trajectories.png, id=38, 660.21657pt x 365.86688
 pt>
 File: figs/Au_AllThree_Spectrum_and_Trajectories.png Graphic file (type png)
  <use figs/Au_AllThree_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: figs/Au_AllThree_Spectrum_and_Trajectories.png used on
- input line 206.
+ input line 220.
 (pdftex.def)             Requested size: 433.62pt x 240.30052pt.
 
-<figs/Au_WGM_Spectrum_and_Trajectories.png, id=44, 667.74469pt x 362.85562pt>
+<figs/Au_WGM_Spectrum_and_Trajectories.png, id=40, 667.74469pt x 362.85562pt>
 File: figs/Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
 <use figs/Au_WGM_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: figs/Au_WGM_Spectrum_and_Trajectories.png used on inpu
-t line 219.
+t line 233.
 (pdftex.def)             Requested size: 433.62pt x 235.63742pt.
 
-<figs/Pt_WGM_Spectrum_and_Trajectories.png, id=45, 665.48625pt x 365.11406pt>
+<figs/Pt_WGM_Spectrum_and_Trajectories.png, id=41, 665.48625pt x 365.11406pt>
 File: figs/Pt_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
 <use figs/Pt_WGM_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: figs/Pt_WGM_Spectrum_and_Trajectories.png used on inpu
-t line 236.
+t line 250.
 (pdftex.def)             Requested size: 433.62pt x 237.9063pt.
- [8] [9 <./figs/Au_AllThree_Spectrum_and_Trajectories.png>] [10 <./figs/Au_WGM_
-Spectrum_and_Trajectories.png>]
-[11 <./figs/Pt_WGM_Spectrum_and_Trajectories.png>] [12]
-Overfull \hbox (8.91713pt too wide) in paragraph at lines 356--356
+ [7] [8 <./figs/Au_AllThree_Spectrum_and_Trajectories.png>] [9 <./figs/Au_WGM_S
+pectrum_and_Trajectories.png>]
+[10 <./figs/Pt_WGM_Spectrum_and_Trajectories.png>] [11]
+Overfull \hbox (8.91713pt too wide) in paragraph at lines 370--370
 [] 
  []
 
-[13] (./SMHET.bbl [14]
+[12] [13] (./SMHET.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+ [14]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -510,7 +511,7 @@ cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on SMHET.pdf (18 pages, 664878 bytes).
+Output written on SMHET.pdf (18 pages, 665419 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
