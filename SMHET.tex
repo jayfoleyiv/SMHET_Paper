@@ -59,19 +59,16 @@ plasmon resonances has been widely explored as a medium for realizing this parad
 shown that composite nanostructures that enable the interplay between dielectric scattering resonances and broad-band
 absorption in small metal nanostructures, a phenomenon termed scattering-mediated absorption, can be 
 used to mediate energetic carrier transfer and selective photochemistry with 
-low-intensity light while completely circumventing plasmon resonance.  The 
-unique ways that dielectric scattering modifies incident optical fields in space and time compared suggests
-that energetic carriers derived from scattering mediated absorption will have unique distributions and dynamics
-compared to their plasmon-derived counterparts.  This observation holds important potential for expanding the
-pallete of materials that can be utilized for hot-carrier mediated photochemistry, and also suggests
-the possibility of discovering new photochemical pathways owing to the unique distributions and dynamics
-of energetic carriers that can arise from scattering mediated absorption.
-In this work, we develop a multi-scale modeling approach for elucidating hot-carrier dynamics initiated
-by scattering-mediated absorption both with and without the use of plasmonic nanoparticles. 
-Our calculations reveal that the dynamics of energetic carriers derived from scattering mediated absorption can be tuned via simple
-geometric parameters of the composite structures, and also suggest that in a variety of circumstances, energetic electron
-generation may be more efficient via scattering mediated absorption than by plasmon excitation under the same 
-illumination conditions.
+low-intensity light while completely circumventing plasmon resonance.  In this work, we develop 
+a multi-scale modling approach for elucidating the hot-carrier dynamics initiated by scattering mediated
+absorption.  Our calculations reveal that unique hot carrier distributions and dynamics arise 
+from scattering mediated absorption as compared plasmon excitation, and also suggest that in 
+a variety of circumstances, scattering mediated absorption may lead to more
+efficiency hot carrier generation than plasmon resonance under the same external illumination
+conditions.  These results are an important first step in understanding the phenomena of
+scattering mediate hot carrier generation, which has potential for expanding the
+pallete of materials that can be utilized for hot-carrier mediated photochemistry,
+and for enabling unique pathways for photocatalytic transformations.
 \end{abstract}
 
 %%\maketitle
@@ -186,7 +183,10 @@ matrix.  The Hamiltonian matrix is comprised of three unique blocks in the CIS m
 Explicit expressions for Hamiltonian matrix elements are given for both the nanocube and nanosphere models in the supplemental information.
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
-this work neglects excited-state decay contributions from electron-electron scattering.  These contributions will be explored in future work.  
+this work neglects excited-state decay contributions from electron-electron scattering.  These contributions will be explored in future work.  Also because of the diagonal nature of field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
+of the field-free Hamiltonian.  This simplifies the interpretation of the electronic structure relative to the CIS 
+wavefunction in molecular quantum mechanics where electron repulsion is included in the Hamiltonian
+and the excited electronic eigenfunctions are linear combinations of singly-excited configurations. 
 The multiplication of the Hamiltonian matrix on the coefficient vector generates the gradient of the coefficient vector in time, and
 a variety of algorithms are known that use this information to propagate the wavefunction in time.  Here we use a symplectic integrator
 described in Ref.~\citenum{SP_JCP_96}.
@@ -200,7 +200,21 @@ and the orbital populations are given by the diagonal elements of the 1-electron
 \end{equation} 
 where the second-quantized operator $\hat{a}_q^{\dagger}$ ($\hat{a}_q$) creates (kills) an electron
 in orbital $q$.  The orbital indices can be uniquely mapped to the relevant orbital quantum numbers ($n_x, n_y, n_z$ for
-the nanocube model, $n, l, m$ for the nanosphere model) so that the orbital energies can be readily computed.
+the nanocube model, $n, l, m$ for the nanosphere model) so that the orbital energies can be readily computed. 
+%Additionally, each excited state can be mapped to a unique configuration $|\Phi_i^a\rangle 
+%Want to emphasize here that the fields themselves are all spatiotemporally distinct.
+%Perhaps provide frequency-resolved images here
+%Plasmon - short excitation, very broad in energy - provides impulsive kick to the system
+%F-P     - moderately short resonance, narrower in energy, provides a more sustained kick to the system
+%WGM     - Longer resonance, narrower in energy (many peaks), provides multiple sustained kicks to the system
+%        - with repitition times
+
+Our model of the Au nanocube has a number of dipole-allowed transitions between 1.3 and 3.3 eV, and
+the Au LSPR has partial overlap with a transition at approximately 2.5 eV (see Figure 1a).  
+The spectral flexibility of dielectric scattering
+resonances allows them to be tuned to overlap with one or more of these transition energies; for example,
+a $d=270nm$ TiO$_2$ NS has a scattering resonance that overlaps with an Au transition at 3.1 eV, and 
+a $d=685nm$ TiO$_2$ NS has scattering resonances that overlap with every transition between 1.3 and 3.3 eV.
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{figs/Au_AllThree_Spectrum_and_Trajectories.png}
