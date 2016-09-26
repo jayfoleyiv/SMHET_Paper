@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 SEP 2016 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 SEP 2016 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,29 +454,41 @@ File: figs/Pt_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 Package pdftex.def Info: figs/Pt_WGM_Spectrum_and_Trajectories.png used on inpu
 t line 245.
 (pdftex.def)             Requested size: 433.62pt x 237.9063pt.
+
+<figs/Au_HotElectronDistribution_Comparison.png, id=45, 1546.77875pt x 814.0412
+4pt>
+File: figs/Au_HotElectronDistribution_Comparison.png Graphic file (type png)
+ <use figs/Au_HotElectronDistribution_Comparison.png>
+Package pdftex.def Info: figs/Au_HotElectronDistribution_Comparison.png used on
+ input line 261.
+(pdftex.def)             Requested size: 433.62pt x 228.20326pt.
+
+<figs/Pt_HotElectronDistribution_Comparison.png, id=46, 1519.6775pt x 825.0825p
+t>
+File: figs/Pt_HotElectronDistribution_Comparison.png Graphic file (type png)
+ <use figs/Pt_HotElectronDistribution_Comparison.png>
+Package pdftex.def Info: figs/Pt_HotElectronDistribution_Comparison.png used on
+ input line 269.
+(pdftex.def)             Requested size: 433.62pt x 235.42793pt.
  [8 <./figs/Au_AllThree_Alternate.png>] [9 <./figs/Au_WGM_Spectrum_and_Trajecto
-ries.png>] [10 <./figs/Pt_WGM_Spectrum_and_Trajectories.png>]
-Overfull \hbox (8.91713pt too wide) in paragraph at lines 365--365
+ries.png>] [10 <./figs/Pt_WGM_Spectrum_and_Trajectories.png> <./figs/Au_HotElec
+tronDistribution_Comparison.png>]
+Overfull \hbox (8.91713pt too wide) in paragraph at lines 384--384
 [] 
  []
 
-[11] (./SMHET.bbl [12]
+[11 <./figs/Pt_HotElectronDistribution_Comparison.png>] [12] (./SMHET.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+
+[13]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [13]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no ˆ in font cmr12!
-Missing character: There is no ’ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -484,6 +496,12 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
  [14]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -495,15 +513,16 @@ Missing character: There is no © in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
+ [15]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [15]) [16] (./SMHET.aux) ) 
+ [16]) [17] (./SMHET.aux) ) 
 Here is how much of TeX's memory you used:
- 5216 strings out of 493089
- 80462 string characters out of 6134842
+ 5226 strings out of 493089
+ 80950 string characters out of 6134842
  152876 words of memory out of 5000000
- 8608 multiletter control sequences out of 15000+600000
+ 8616 multiletter control sequences out of 15000+600000
  11962 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,94p,1113b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -525,10 +544,10 @@ y7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on SMHET.pdf (16 pages, 4115288 bytes).
+Output written on SMHET.pdf (17 pages, 4502162 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
