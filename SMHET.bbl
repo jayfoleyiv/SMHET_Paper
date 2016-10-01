@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{32}
+\begin{mcitethebibliography}{33}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -278,6 +278,13 @@ Bernardi,~M.; Mustafa,~J.; Neaton,~J.~B.; Louie,~S.~G. Theory and computation
 \bibitem[Sanz-Serna and Portillo(1996)Sanz-Serna, and Portillo]{SP_JCP_96}
 Sanz-Serna,~J.~M.; Portillo,~A. Classical numerical integrators for wave-packet
   dynamics. \emph{J. Chem. Phys.} \textbf{1996}, \emph{104}, 2349--2355\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Bohren and Huffman(1998)Bohren, and Huffman]{Bohren}
+Bohren,~C.~F.; Huffman,~D.~R. \emph{Absorption and Scattering of Light by Small
+  Particles}; John Wiley and Sons, 1998\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

@@ -1,48 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: SMHET.aux
 The style file: achemso.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: acs-SMHET.bib
 Database file #2: SMHET.bib
-You've used 32 entries,
+You've used 33 entries,
             2478 wiz_defined-function locations,
-            940 strings with 12490 characters,
-and the built_in function-call counts, 11987 in all, are:
-= -- 932
-> -- 752
-< -- 13
-+ -- 296
-- -- 264
-* -- 1350
-:= -- 1630
-add.period$ -- 60
-call.type$ -- 32
+            945 strings with 12604 characters,
+and the built_in function-call counts, 12225 in all, are:
+= -- 947
+> -- 765
+< -- 14
++ -- 301
+- -- 268
+* -- 1374
+:= -- 1665
+add.period$ -- 61
+call.type$ -- 33
 change.case$ -- 3
 chr.to.int$ -- 2
-cite$ -- 32
-duplicate$ -- 663
-empty$ -- 787
-format.name$ -- 306
-if$ -- 2292
+cite$ -- 33
+duplicate$ -- 677
+empty$ -- 813
+format.name$ -- 313
+if$ -- 2343
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 209
-num.names$ -- 93
-pop$ -- 56
+newline$ -- 215
+num.names$ -- 96
+pop$ -- 57
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
 skip$ -- 1
 stack$ -- 0
 substring$ -- 668
-swap$ -- 735
-text.length$ -- 62
+swap$ -- 746
+text.length$ -- 64
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 218
+type$ -- 222
 warning$ -- 0
-while$ -- 108
+while$ -- 110
 width$ -- 0
-write$ -- 420
+write$ -- 431
