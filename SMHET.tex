@@ -349,7 +349,7 @@ occupancy after the 20th timestep. Similarly we find that the Fabry-Perot struct
 \includegraphics[width=6in]{figs/Au_HotElectronDistribution_Comparison.png}
 \caption{Snapshots of changes in occupation of each orbital in the active space of the PIW Au NC model as a measure of instantaneous hot-carrier distributions.
 The change in orbital occupation is computed from elements of the time-dependent one-electron reduced density matrix ($^1$RDM) relative to
-their initial value, $D_p^p(t)-D_P^p(t=0)$.}
+their initial value, $D_p^p(t)-D_P^p(t=0)$ for several timepoints in the simulation.}
 \end{center}
 \end{figure}
 
@@ -357,9 +357,9 @@ their initial value, $D_p^p(t)-D_P^p(t=0)$.}
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{figs/Pt_HotElectronDistribution_Comparison.png}
-\caption{Snapshots of changes in occupation of each orbital in the active space of the PIW Au NC model as a measure of instantaneous hot-carrier distributions.
+\caption{Snapshots of changes in occupation of each orbital in the active space of the PIW Pt NC model as a measure of instantaneous hot-carrier distributions.
 The change in orbital occupation is computed from elements of the time-dependent one-electron reduced density matrix ($^1$RDM) relative to
-their initial value, $D_p^p(t)-D_P^p(t=0)$.  }
+their initial value, $D_p^p(t)-D_P^p(t=0)$ for several timepoints in the simulation.  }
 \end{center}
 \end{figure}
 
@@ -465,8 +465,9 @@ have the form
 \end{equation}
 The energy eigenvalues have the form
 \begin{equation}
-E_{nx,ny,nz} = \frac{\hbar^2 \pi^2}{2 \: m \: L^2}\left(n_x^2 + n_y^2 + n_z^2\right).
+\epsilon_{nx,ny,nz} = \frac{\hbar^2 \pi^2}{2 \: m \: L^2}\left(n_x^2 + n_y^2 + n_z^2\right).
 \end{equation}
+We order the orbitals by a single index $p$ such that $\epsilon_{p+1} \geq \epsilon_p$.
 The transition dipole integrals can be evaluated analytically,
 \begin{align*}
 \langle \psi_{nx,ny,nz} |  \hat{\mu}_x | \psi_{nx',ny',nz'} \rangle = e \: \delta_{ny,ny'} \: \delta_{nz,nz'} \:
@@ -475,6 +476,21 @@ The transition dipole integrals can be evaluated analytically,
 \frac{L (\pi (n_x + n_x'){\rm sin}(\pi(n_x + n_x'))+{\rm cos}(\pi(n_x+n_x'))-1) }{\pi^2 (n_x + n_x')^2 },
 \end{align*}
 where $\hat{\mu}_x = -e x$.  Analagous expressions can be obtained for expectation values of $\hat{\mu}_y$ and $\hat{\mu}_z$. 
+Using the above expressions, the diagonal matrix elements can be evaluated as
+\begin{align}
+\langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle = \sum_{p=1}^{nocc} \epsilon_p \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_i^a \rangle = \sum_{p=1}^{nocc} \epsilon_p - \epsilon_i + \epsilon_a
+\end{align}
+and the off-diagonal matrix elements can be evaluated as
+\begin{align}
+\langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle = \langle \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_a \rangle \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle = \delta_{ij} \psi_a | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_b \rangle - \delta_{ab} \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_j \rangle 
+\end{align} 
+
+  % \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
+  %\langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}.
+
+
 
 \subsection{Finite-difference time-domain calculations}
 A commercial simulator based on the finite-difference time-domain method~\cite{Lumerical} was used to compute the electric field, $E(t)$
