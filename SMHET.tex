@@ -339,7 +339,7 @@ upon structure, metal {for this paragraph this is how I will arrange them} or ti
 observe in the figures for both metals, that the nanocube cube structures cease to change their orbital 
 occupancy after the 20$^{{\rm th}}$ timestep. Similarly we find that the Fabry-Perot structures??
 
-
+\newpage
 \section{Supplementary Information}
 
 \subsection{Plots of Global Hot-Carrier Distributions}
@@ -363,98 +363,7 @@ their initial value, $D_p^p(t)-D_P^p(t=0)$ for several timepoints in the simulat
 \end{center}
 \end{figure}
 
-\newpage
 
-%\subsection{Time-dependent configuration-interaction singles method}
-%We use the time-dependent configuration interaction singles (TD-CIS) method to elucidate the
-%electronic dynamics in the metal nanoparticles driven by the electric fields resulting from 
-%dielectric scattering resonances, plasmon resonances, or freely propagating light.  
-%The TDCIS equations arise directly from the time-dependent Schr\"odinger equation (TDSE) when the wavefunction
-%is written as a superposition of a ground state reference configuration, $|\Phi_0\rangle$, and configurations which are singly excited relative
-%to $\Phi_0$,  In the CIS model, the wavefunction has the form
-%\begin{equation}
-%|\Psi_{CIS}\rangle = c_0 |\Phi_0 \rangle + \sum_{i,a} c_i^a |\Phi_i^a\rangle,
-%\end{equation}
-%where the configuration $|\Phi_i^a\rangle$ has an electron excited from orbital $i$ to orbital $a$, 
-%and $c_0$ and $c_i^a$ are complex expansion coeffients.  Unless otherwise specified, indices $i, j$ will indicate
-%orbitals which are occupied in the ground state reference configuration and indices $a, b$ will indicate orbitals
-%which are unoocupied in the ground state reference.
-
-%Each many-electron configuration is an anti-symmetrized product of one-electron orbitals which are chosen to be energy eigenstates of 
-%an appropriate one-electron Hamiltonian, further elaborated in subsequent sections. 
-%We neglect electron-electron repulsion in our many-electron Hamiltonian, so the ground state configuration
-%can be exactly described by the anti-symmetrized product of the first $N/2$ one-electron orbitals, 
-%$|\Phi_0\rangle = |\psi_1 ... \psi_i \psi_j ... \psi_{N/2} \rangle$, where $\psi_q$ denotes the $q^{th}$ one-electron orbital.  
-
-%The time-evolution of the wavefunction can be subsumed in the expansion coefficients, which allows the TDSE to be written 
-%\begin{equation}\label{TDCIS}
-%i\hbar \frac{ d}{dt} {\bf c}(t) = {\bf H}(t) {\bf c}(t)
-%\end{equation}
-%where ${\bf c}(t)$ is the vector of complex expansion coefficients and ${\bf H}(t)$ is the time-dependent Hamiltonian
-%matrix.  The Hamiltonian matrix is comprised of three unique blocks in the CIS model,  
-%\begin{equation}
-%  {\bf H}(t) 
-%  \mbox{=}
-%  \begin{pmatrix}
-%    \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
-%  \langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}
-%\end{equation}
-%In our work, the Hamiltonian operator has a component for the electronic energy and a component for a dipolar interaction of the electrons with the electric
-%field,
-%\begin{equation}
-%\hat{H}(t) = \hat{H}_{el} - {\bf E}(t) \cdot \hat{\mu},
-%\end{equation}
-%and derives time-dependence through the time-dependence of the electromagnetic field that interacts
-%with the electrons described by the CIS wavefunction.  Both the electronic and dipolar contributions can be written 
-%as sums of one-electron terms %% Probably want to include slater rules... also mention that everything is 1-electron
-%The specific forms of the components of the Hamiltonian
-%operator are covered in more detail in the following sections. 
-
-%The multiplication of the Hamiltonian matrix on the coefficient vector generates the gradient of the coefficient vector in time, and 
-%a variety of algorithms are known that use this information to propagate the wavefunction in time.  Here we use a symplectic integrator
-%described in Ref.{\it Sanz-Serna's paper}.
-
-
-
-%\subsection{Electronic structure of metal nanospheres}
-%For spherical metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-spherical-well. 
-%For a particle confined by a spherical well with radius $R$, the potential is 0 when $r<R$ and infinity with $r \geq R$, so that only kinetic energy contributes
-%to the energetic.
-%The energy eigenstates have the form~\cite{KS_JCP_1983,SKD_Nature_2012} 
-%\begin{equation}
-%\psi_{n,l,m}(r,\theta,\phi) = j_l(\alpha r) Y_{l,m}(\theta,\phi),
-%\end{equation}
-%where $j_l(\alpha r)$ are the spherical Bessel functions are 
-%$Y_{l,m}(\theta,\phi)$ are the spherical Harmonics.  
-%In our numerical implementation, we use the asymptotic approximation of the spherical Bessel functions 
-%$j_l(\alpha r) \approx {\rm cos}(\alpha r - \frac{\pi}{2} (l+1))/r$.  To evaluate the spherical harmonics, we use a recursive 
-%algorithm described in Ref.~\citenum{Numerical} to evaluate the associated Legendre polynomials.  The energy eigenfunctions
-%must vanish at $r=R$, which leads to the following form for the one-electron orbitals:
-%\begin{equation}
-%\psi_{n,l,m}(r,\theta,\phi)  = 
-%\frac{2}{\sqrt{R}} 
-%\frac{{\rm cos} \left( \frac{ \pi }{2}(2n + 2 + l)\frac{r}{R} - \frac{\pi}{2}(l+1)\right)}{r} \: Y_{l,m} (\theta,\phi).
-%\end{equation}
-%The energy eigenvalues have the form 
-%\begin{equation}
-%E_{n,l} = \frac{\hbar^2 \pi^2}{8 m R^2} \left(2 n + l + 2\right)^2.
-%\end{equation}
-%From the definition of the spherical polar coordinates, the $x$, $y$, and $z$ components of the transition dipole integrals have the form
-%\begin{align}
-%\langle \mu_x \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_x \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
-%\langle \mu_y \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_y \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
-%\langle \mu_z \rangle  = \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_z \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi, 
-%\end{align}
-%where $\hat{\mu}_x = -e \cdot r \cdot {\rm sin}\theta \: {\rm cos}\phi$, $\hat{\mu}_y = -e \cdot r \cdot {\rm sin}\theta \: {\rm sin}\phi$, 
-%$\hat{\mu}_z = -e \cdot r \cdot {\rm cos}\theta$, and $e$ is the charge of the electron.
-
-%In this work, we neglect the $x$ and $y$ components of the field and evaluate $\mu_z$ numerically, where the integral can be
-%simplified to
-%\begin{equation}
-%\langle \mu_z \rangle = \delta_{m,m'} \cdot 2\pi \cdot \int_0^R \int_0^{2\pi} j_{n,l}(\alpha r) \: P_{n,l}({\rm cos} \: \theta) \: \hat{\mu}_z \: j_{n',l'}(\alpha r) \: P_{n',l'}({\rm cos} \: \theta) \: r^2 \: {\rm sin}\theta \: dr \: d\theta,
-%\end{equation}
-%where $j_{n,l}(\alpha r)$ denotes the asymptotic approximation to the Spherical Bessel Function (written explicitly in Eq. ) and $P_{n,l}({\rm cos} \: \theta)$ denotes
-%the associated Legendre polynomial.
 
 \subsection{Electronic structure of metal nanocubes}
 For cubic metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-cubic-well.  
@@ -477,8 +386,8 @@ The transition dipole integrals can be evaluated analytically,
 where $\hat{\mu}_x = -e x$.  Analogous expressions can be obtained for expectation values of $\hat{\mu}_y$ and $\hat{\mu}_z$. 
 
 We order the orbitals by a single index $p$ such that $\epsilon_{p+1} \geq \epsilon_p$; that is,
-each $\psi_{nx,ny,nz}$ can be uniquely labeled $\psi_q$.
-Using the above expressions and this unique labeling, the diagonal matrix elements can be evaluated as
+each $\psi_{nx,ny,nz}$ can be uniquely labeled $\psi_p$.
+Using the above expressions and following this labeling scheme, the diagonal matrix elements can be evaluated as
 \begin{align}
 \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle = \sum_{p=1}^{nocc} \epsilon_p \\
 \langle \Phi_i^a | \hat{H}(t) | \Phi_i^a \rangle = \sum_{p=1}^{nocc} \epsilon_p - \epsilon_i + \epsilon_a
@@ -488,9 +397,6 @@ and the off-diagonal matrix elements can be evaluated as
 \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle = \langle \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_a \rangle \\
 \langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle = \delta_{ij} \psi_a | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_b \rangle - \delta_{ab} \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_j \rangle.
 \end{align} 
-
-  % \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
-  %\langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}.
 
 
 
