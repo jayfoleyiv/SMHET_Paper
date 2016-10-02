@@ -23,7 +23,7 @@
 \email{foleyj10@wpunj.edu}
 
 %Title of paper
-\title{Highly-tunable hot-electron distributions from scattering-mediated absorption}
+\title{Unique hot-carrier distributions from scattering-mediated absorption}
 % Date
 \date{\today}
 
@@ -32,44 +32,27 @@
 \begin{document}
 
 \begin{tocentry}
-
-Some journals require a graphical entry for the Table of Contents.
-This should be laid out ``print ready'' so that the sizing of the
-text is correct.
-
-Inside the \texttt{tocentry} environment, the font used is Helvetica
-8\,pt, as required by \emph{Journal of the American Chemical
-Society}.
-
-The surrounding frame is 9\,cm by 3.5\,cm, which is the maximum
-permitted for  \emph{Journal of the American Chemical Society}
-graphical table of content entries. The box will not resize if the
-content is too big: instead it will overflow the edge of the box.
-
-This box and the associated title will always be printed on a
-separate page at the end of the document.
-
+\includegraphics[width=9cm]{figs/nanosphere_WGMv2.png}
 \end{tocentry}
 
 \begin{abstract}
 
-Light-initiated energetic electron transfer (EET) has attracted considerable attention as an emerging paradigm for 
-photocatalysis and solar energy conversion, and the use of noble metal nanoparticles that support Localized Surface
-Plasmon Resonances (LSPR) has been widely explored as a medium for realizing this paradigm.  It was recently
+Light-initiated generation of energetic carriers has attracted considerable attention as a paradigm for 
+photocatalysis and solar energy conversion, and the use of noble metal nanoparticles that support localized surface
+plasmon resonances has been widely explored as a medium for realizing this paradigm.  It was recently
 shown that composite nanostructures that enable the interplay between dielectric scattering resonances and broad-band
 absorption in small metal nanostructures, a phenomenon termed scattering-mediated absorption, can be 
-used to mediate EET and selective photochemistry with 
-low-intensity light while completely circumventing plasmon excitation.  This observation raises the question as to 
-whether the energetic electrons derived from scattering mediated absorption have unique distributions and dynamics
-compared to their plasmon-derived counterparts, and if so, what implications these differences have for the efficiency 
-and selectivity of EET.  In this work, we develop a multi-scale modelling approach for elucidating the dynamics 
-of energetic electrons derived from scattering mediated absorption and from plasmon excitation.  We show that populations
-and dynamics of energetic electrons derived from scattering mediated absorption can be tuned via simple
-geometric parameters of the composite structures, and also suggest that in a variety of circumstances, energetic electron
-generation may be more efficient via scattering mediated absorption than by plasmon excitation under the same 
-illumination conditions.
-
-
+used to mediate energetic carrier transfer and selective photochemistry with 
+low-intensity light while completely circumventing plasmon resonance.  In this work, we develop 
+a multi-scale modling approach for elucidating the hot-carrier dynamics initiated by scattering mediated
+absorption.  Our calculations reveal that unique hot carrier distributions and dynamics arise 
+from scattering mediated absorption as compared plasmon excitation, and also suggest that in 
+a variety of circumstances, scattering mediated absorption may lead to more
+efficienct hot carrier generation than plasmon resonance under the same external illumination
+conditions.  These results are an important first step in understanding the phenomena of
+scattering mediate hot carrier generation, which has potential for expanding the
+pallete of materials that can be utilized for hot-carrier mediated photochemistry,
+and for enabling unique pathways for photocatalytic transformations.
 \end{abstract}
 
 %%\maketitle
@@ -78,8 +61,9 @@ illumination conditions.
 
 \section{Introduction}
 
-Various strategies that exploit the optical properties of metal nanoparticles, namely their ability to support localized surface plasmons resonances (LSPR, which are collective oscillations of their 
-conduction electrons driven by visible light), have been explored recently with the aim of using low-intensity light to efficiently drive chemical 
+Various strategies that exploit the optical properties of metal nanoparticles, namely their ability to support localized surface plasmons resonances [LSPR], 
+which are collective oscillations of their 
+conduction electrons driven by light, have been explored recently with the aim of using low-intensity light to efficiently drive chemical 
 reactions~\cite{LCI_NatureMater_2011,KAC_ACSCatalysis_2013,ZLQ_RSCAdvances_2015,PKL_AccChemRes_2015}.  The interest in this area has 
 been motivated partly by the fact that metal nanoparticles (most prominently silver and gold) are exceptionally good absorbers of visible light, 
 so they are ideal candidates for harvesting solar photons~\cite{AP_NatMat_2010}.  
@@ -108,12 +92,12 @@ Considering this, an incredible opportunity exists to identify new classes of st
 namely exceptional light-harvesting potential, while also offering greater selectivity and efficiency in energy transfer, as well as tunable surface chemistry for enhanced catalytic activity.  
 Ideally, such structures could be made mostly, if not entirely, from cost-effective materials.  Recent progress towards this aim has been made by designing hybrid 
 nanostructures that effectively delegate the light-harvesting and catalytic functions to separate components of the structure.  Recently, Halas and co-workers 
-demonstrated an antenna-reactor concept that levarages the nearfield enhancement from aluminum plasmons to generate energetic carriers on 
-paladium islands and showed the efficacy of this strategy for the photcatalytic transformation of acetylene to ethyelene~\cite{SZZ_PNAS_2016}.
+demonstrated an antenna-reactor concept that leverages the near-field enhancement from aluminum plasmons to generate energetic carriers on 
+palladium islands and showed the efficacy of this strategy for the photcatalytic transformation of acetylene to ethylene~\cite{SZZ_PNAS_2016}.
 Two of the current authors, along with Sun and co-workers, demonstrated a phenomena known as scattering-mediated absorption where dielectric
-scattering resonances in SiO$_2$ nanospheres were utlized to induce resonant absorption in non-plasmonic platinum nanoparticles in SiO$_2$/Pt nanohybrids~\cite{ZHX_NatPhoton_2016}.
+scattering resonances in SiO$_2$ ionospheres were utilized to induce resonant absorption in non-plasmonic platinum nanoparticles in SiO$_2$/Pt nanohybrids~\cite{ZHX_NatPhoton_2016}.
 The scattering-mediated absorption (SMA) phenomena was also observed to induce highly selective photocatalytic oxidation of benzyl alcohol to benzaldehyde~\cite{ZHX_NatPhoton_2016}.
-Zhang {\it et al.} indendently described a SMA phenomenon in Au-TiO$_2$ nanohybrids that leveraged so-called whispering gallery modes to 
+Zhang {\it et al.} independently described a SMA phenomenon in Au-TiO$_2$ nanohybrids that leveraged so-called whispering gallery modes to 
 enhance plasmonic and non-plasmonic absorption in gold nanoparticles, and demonstrated these structures efficacy for photocatalytic water splitting~\cite{ZJM_ACSNano_2016}.
 Interestingly, hot-carrier transfer was implicated in the photocatalytic mechanisms that resulted from these SMA phenomena~\cite{ZHX_NatPhoton_2016,ZJM_ACSNano_2016}.
 The prospect of using SMA in hybrid dielectric/metal nanostructures to initiate hot-carrier generation and transfer is particularly 
@@ -124,39 +108,37 @@ to those produced by plasmon excitation.
 The push to identify novel structures for mediating hot-carrier generation and transfer has been paralleled by 
 efforts to develop theoretical methodologies to elucidate these processes.  The underlying electronic
 structure has been treated both within free-electron models confined by potential wells~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_2015,SAG_ACSPhotonics_2016} (here called
-"particle-in-a-well (PIW) models), as well as by {\it ab initio} approaches~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
+``particle-in-a-well" [PIW] models), as well as by {\it ab initio} approaches~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
 Using PIW models, Govorov and co-workers developed a theory of 
 hot-electron generation within the framework of time-dependent perturbation theory that
 has elucidated a variety of shape- and size-dependent factors for optimizing 
-the hot-carrier generation~\cite{GZG_JPCC_2013,ZG_JPCC_2014}.  A similar approach was also persued by Kumarasinghe {\it et al.} suggesting
-that nanorods are exceptionally good structures for hot-carrier generation~\cite{KPB_SciRep_2015}.  Garc${\rm \acute{i}}$a de Abajo and co-workers recently described a 
+the hot-carrier generation~\cite{GZG_JPCC_2013,ZG_JPCC_2014}.  A similar approach was also pursued by Kumarasinghe {\it et al.} suggesting
+that nanorods are exceptionally good structures for hot-carrier generation~\cite{KPB_SciRep_2015}.  Garc\'ia de Abajo and co-workers recently described a 
 quantum master equation approach with an underlying PIW model that elucidated a number of key factors that influence
 hot-carrier excitation and decay dynamics~\cite{SAG_ACSPhotonics_2016}.  The utilization of {\it ab initio} approaches by Sundararaman {\it et al} 
-has also provided valuable insights into the role that a metals bandstructure plays
-in determining the efficiency of hot-carrier generation, and particularly in the assymetry between hot-electron
-nd hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
+has also provided valuable insights into the role that a metals band-structure plays
+in determining the efficiency of hot-carrier generation, and particularly in the asymmetry between hot-electron
+and hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
 and found negligible impact on hot-carrier generation and dynamics in Ag nanospheres resulting from electron correlation~\cite{MLK_ACSNano_2014}, 
 though Bernardi {\it et al} have demonstrated that many-body effects are important in the hot-carrier dynamics resulting
 from surface plasmon polaritons in gold and silver~\cite{BMN_NatComm_2015}.
 
-We develop an novel approach for studying hot-carrier dynamics that may arise from arbitrary electromagnetic
-fields, including the unique nearfields that arise from SMA on hybrid dielectric-metal nanoparticles and plasmon resonance
+We develop a novel approach for studying hot-carrier dynamics that may arise from arbitrary electromagnetic
+fields, including the unique near-fields that arise from SMA on hybrid dielectric-metal nanoparticles and LSPR
 on noble metal nanoparticles.
-%In this work, we take a first step towards investigating the unique distributions and dynamics of energetic carriers produced via SMA in 
-%dielectric sphere/metal nanoparticle hybrid structures by developing a multi-scale modelling framework
-%for simulating the electronic dynamics driven by arbitrary time-domain electromagnetic fields.  We find that the populations
-%and dynamics of hot carriers derived from SMA can be tuned through simple
-%geometric parameters of the dielectric component of the hybrid structures.   Importantly, we also find that in a variety of circumstances, energetic electron
-%generation may be more efficienty by scattering mediated absorption than by plasmon excitation under the same illumination conditions.
 We consider the electronic degrees of freedom on the metal nanoparticle subject to the time-dependent Hamiltonian 
 \begin{equation}\label{eq:TDHam}
 \hat{H}(t) = \hat{H}_{el} - {\bf E}(t) \cdot \hat{\mu}, 
 \end{equation}
 where the specific form of ${\bf E}(t)$ derives from a rigorous time-domain electrodynamics calculation with a realistic model
-of the nanostructure in question and $\hat{H}_{el}$ describes non-interacting electrons confined by an infinite potential well.  
-Through appropriate choice of the shape of the potential well, nanocubes and nanospheres are modelled.  We compute the time-domain field 
-using a commercial simulator based on the finite-difference time-domain method~\cite{Lumerical}; more details are given in 
-the supplemental information.    
+of the nanostructures in question and $\hat{H}_{el}$ describes non-interacting electrons confined to metal nanocubes [NCs] an infinite potential well.  
+We compute the time-domain field 
+using a commercial simulator based on the finite-difference time-domain [FDTD] method~\cite{Lumerical}.  
+Incorporating  ${\bf E}(t)$ from these FDTD simulations into the time-dependent Hamiltonian enables us to investigate the unique ways
+in which the electronic degrees of freedom evolve under the influence of the distinct time-varying fields that result
+from LSPR and dielectric scattering resonances, allowing us a unique window into the hot-carrier dynamics resulting from LSPR as compared
+to SMA.  More details about the FDTD calculations are provided in
+the supplemental information.  
 
 The many-electron wavefunction of the metal nanoparticles is expanded in terms of a configuration-interaction expansion that
 includes all singly-excited configurations,
@@ -164,9 +146,9 @@ includes all singly-excited configurations,
 |\Psi_{CIS}\rangle = c_0 |\Phi_0 \rangle + \sum_{i,a} c_i^a |\Phi_i^a\rangle,
 \end{equation}
 where the configuration $|\Phi_i^a\rangle$ has an electron excited from orbital $i$ to orbital $a$, 
-and $c_0$ and $c_i^a$ are complex expansion coeffients.  Unless otherwise specified, indices $i, j$ will indicate
+and $c_0$ and $c_i^a$ are complex expansion coefficients.  Unless otherwise specified, indices $i, j$ will indicate
 orbitals which are occupied in the ground state reference configuration and indices $a, b$ will indicate orbitals
-which are unoocupied in the ground state reference.  
+which are unoccupied in the ground state reference.  
 
 The time-evolution of the wavefunction can be subsumed in the expansion coefficients, which allows the TDSE to be written 
 \begin{equation}\label{TDCIS}
@@ -181,15 +163,20 @@ matrix.  The Hamiltonian matrix is comprised of three unique blocks in the CIS m
     \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
   \langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}.
 \end{equation}
-Explicit expressions for Hamiltonian matrix elements are given for both the nanocube and nanosphere models in the supplemental information.
+Explicit expressions for Hamiltonian matrix elements are given for the NC model in the supplemental information.
+
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
 this work neglects excited-state decay contributions from electron-electron scattering.  These contributions will be explored in future work.  
+Also because of the diagonal nature of field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
+of the field-free Hamiltonian.  This simplifies the interpretation of the electronic structure relative to the CIS 
+wavefunction in molecular quantum mechanics where electron repulsion is included in the Hamiltonian
+and the excited electronic eigenfunctions are linear combinations of singly-excited configurations. 
 The multiplication of the Hamiltonian matrix on the coefficient vector generates the gradient of the coefficient vector in time, and
 a variety of algorithms are known that use this information to propagate the wavefunction in time.  Here we use a symplectic integrator
-described in Ref.~\citenum{SP_JCP_96}.
+described in Ref.~\citenum{SP_JCP_96}.  Propagation of the CIS wavefunction is referred to as the TDCIS method throughout.
 
-We analyze the hot-carrier distribution and dynamics that results from SMA and plasmon excitation by computing the 
+We analyze the hot-carrier distribution and dynamics that results from SMA and LSPR excitation by computing the 
 instantaneous populations of orbitals both above and below the Fermi level of the metal nanostructure.   
 In our model, the orbitals are energy eigenstates of a 1-electron Hamiltonian and have well-defined kinetic energy,
 and the orbital populations are given by the diagonal elements of the 1-electron reduced density matrix,
@@ -198,50 +185,185 @@ and the orbital populations are given by the diagonal elements of the 1-electron
 \end{equation} 
 where the second-quantized operator $\hat{a}_q^{\dagger}$ ($\hat{a}_q$) creates (kills) an electron
 in orbital $q$.  The orbital indices can be uniquely mapped to the relevant orbital quantum numbers ($n_x, n_y, n_z$ for
-the nanocube model, $n, l, m$ for the nanosphere model) so that the orbital energies can be readily computed.
+the PIW model for nanocubes) so that the orbital energies can be readily computed. 
+%Additionally, each excited state can be mapped to a unique configuration $|\Phi_i^a\rangle 
+%Want to emphasize here that the fields themselves are all spatiotemporally distinct.
+%Perhaps provide frequency-resolved images here
+%Plasmon - short excitation, very broad in energy - provides impulsive kick to the system
+%F-P     - moderately short resonance, narrower in energy, provides a more sustained kick to the system
+%WGM     - Longer resonance, narrower in energy (many peaks), provides multiple sustained kicks to the system
+%        - with repitition times
+
 \begin{figure}
 \begin{center}
-\includegraphics[width=6in]{figs/Au_AllThree_Spectrum_and_Trajectories.png}
+\includegraphics[width=6in]{figs/Au_AllThree_Alternate.png}
 \caption{Three regimes for light-matter interactions leading to unique
 spatial and temporal shaping of the incident field, and the corresponding
-impact on electronic dynamics in a Au nanocube. Panel {\bf (a)} shows
-the absorption of a 2nm gold nanocube and the scattering of of 270 nm and
-685 nm TiO$_2$ nanospheres that display predominately Fabry-Perot and Whispering Gallery Mode visible resonances, respectively.  These spectra are overlayed
-with the dipole-allowed transitions in our quantum mechanical Au NC model.  Both dielectric scattering resonances show more efficient generation of hot-electrons (Panel {\bf (b)} and hot-holes (Panel {\bf (c)}) compared to LSPR in this case.}
+impact on electronic dynamics in a Au nanocube. Plots of the near-field enhancements (${\bf |E|}/{\bf |E_0|}$) are shown of the
+Au NCs LSPR ($\lambda=532 nm$, {\bf Panel (a)}), a Fabry-Perot resonance of a d=285nm dielectric nanosphere decorated with Au NCs ($\lambda = 397 nm$, {\bf Panel (b)}),
+and a Whispering Gallery Mode resonance of a d=685 nm dielectric nanosphere decorated with Au NCs ($\lambda = 493 nm$, {\bf Panel (c)}).
+The extinction spectra of these three structures are shown overlaid with the dipole-allowed transitions in the PIW model of the Au NC, showing particularly
+strong overlap between these transitions and the scattering resonances of the d=685 nm dielectric nanosphere ({\bf Panel (d)}).
+The change in orbital populations ($D_p^p(t)-D_P^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
+Both dielectric scattering resonances show more efficient generation of hot-electrons ({\bf Panel (e)}) and hot-holes ({\bf Panel(f)}) compared to LSPR in this case.}
+\end{center}
+\end{figure}
+
+%% E_f gold is 5.52 eV, Nels = 472
+%% E_f Pt   is 9.40 eV, Nels = 1104
+The TDCIS approach is applied to investigate hot-carrier dynamics of $L=2nm$ gold and platinum NCs that are (a) free-standing so that
+the dynamics are induced by optical resonances supported by the NC alone and (b) supported on various dielectric nanospheres so
+that the dynamics are also induced by time-evolving nearfields arising from dielectric scattering resonance.
+The electronic structure
+of these model NCs are distinguishable by their Fermi energies and the number of electrons: the Au NC model has a Fermi energy
+of 5.52 eV (compared to the bulk value of 5.53 eV) and 472 electrons, the Pt NC model has a Fermi energy of 9.40 eV (compared to the bulk
+value of 9.75 eV) and 1104 electrons. 
+In this work, 4900 singly-excited configurations are included in $|\Psi_{CIS}\rangle$ for both Au and Pt NCs.  
+Despite the large number of excited states included in our many-electron wavefunctions, the high 
+degeneracy of the underlying dipole-allowed transitions leads to a relatively small number of visible spectroscopic lines for the Au (see Figure 1 (d))
+and Pt models (see Figure 2 (d)). 
+
+The spectral flexibility of dielectric scattering
+resonances allows tuning to overlap with one or more of these transition energies via the nanosphere size; in contrast, for very small 
+metal nanoparticles, the position of the LSPR is intrinsically related to the relative permittivity of the metal~\cite{Bohren}.  This is
+illustrated by plotting the scattering spectrum of a moderate-sized ($d=270nm$) and large ($d=685nm$) dielectric nanospheres and the 
+absorption spectrum of a small ($d=2nm$) gold nanosphere overlaid with the dipole-allowed
+transitions in our PIW model of the Au NC (see Figure 1(d)). The $d=270nm$ dielectric nanosphere has a relatively broad scattering resonance 
+(herein referred to as a Fabry-Perot [FP] resonance) that overlaps 
+with an Au transition at 3.1 eV, and
+a $d=685nm$ dielectric nanosphere has narrow scattering resonances (whispering gallery modes [WGM]) 
+that overlap with multiple transitions between 1.3 and 3.3 eV.  The $2nm Au$ NC has a broad absorption peak associated with its LSPR that partially
+overlaps with a dipole-allowed transition in the PIW Au NC at 2.5 eV. 
+As proxies of the hot-carrier dynamics in the Au NC, we plot the population dynamics of the highest and lowest energy orbitals in our active space, which lie
+2.2 eV above and 1.6 eV below the Fermi energy, respectively (Figure 1 (e) and (f)).  Snapshots of the populations of all active
+orbitals in the Au NC model at various times are also provided in the supplemental information (see Figure S1).  
+We observe that the LSPR generates a relatively small
+population of hot-carriers with field-driven dynamics that evolve on a short (~10 fs) timescale.  FP resonance in this
+case lead to significantly more efficient hot-hole generation with field driven dynamics that evolve on a moderate (~50 fs) timescale (Figure 1(f)), while
+WGM resonances lead to significantly more efficienty hot-electron generation with field drive dynamics that evolve on a much longer (~200 fs) timescale
+(Figure 1(e) and Figure 3(b)).  Another key distinction hot-carrier density generated by the Au LSPR and by SMA is that the hot-carrier density
+of the former is concentrated within 1 eV of the Fermi level, while SMA leads to appreciable density $\pm 2$ eV of the Fermi level (see Figure S1).
+
+These differences can be attributed in part to the unique ways in which each resonant interaction simultaneously modulates the incident optical
+fields in space and in time. An illustration of spatial confinement associated with each resonance can be see in the
+electric field intensity maps at the resonance frequency for the
+Au LSPR (Figure 1(a)), FP resonance (Figure 1(b)), and WGM resonance (Figure 1(c)); all resonances lead to approximately 1 order of
+magnitude nearfield enhancement in the vicinity of the Au NC.
+A progression of resonance lifetimes can be inferred from the extinction spectra of the Au LSRP, the FP resonance, and the WGM resonance, with
+the Au LSPR having the broadest extinction peak and the shortest lifetime, and the WGM having the most narrow extinction peaks and longest lifetimes.  These
+lifetimes determine the period of time that the metal electrons are being driven by enhanced nearfields associated with the optical resonances, and
+the long lifetime associated with the WGM means that the nearfield that drives the metal electrons continues to evolve on a relatively long timescale compared
+to the electronic dynamics.
+Longevity of the evolution of the electric field resulting from dielectric scattering resonances are consistent with
+with longer period of population movement from Fermi level and below to higher unoccupied orbitals when compared with surface plasmon
+resonance of Au.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=6in]{figs/Pt_AllThree_Alternate.png}
+\caption{Three regimes for light-matter interactions leading to unique
+spatial and temporal shaping of the incident field, and the corresponding
+impact on electronic dynamics in a Pt nanocube. Plots of the near-field enhancements (${\bf |E|}/{\bf |E_0|}$) are shown of the
+Pt NC's extinction maximum ($\lambda=200 nm$, {\bf Panel (a)}), a Fabry-Perot resonance of a d=285nm dielectric nanosphere decorated with Pt NCs
+($\lambda = 397 nm$, {\bf Panel (b)}),
+and a Whispering Gallery Mode resonance of a d=685 nm dielectric nanosphere decorated with Pt NCs ($\lambda = 493 nm$, {\bf Panel (c)}).
+The extinction spectra of these three structures are shown overlaid with the dipole-allowed transitions in the PIW model of the Pt NC, showing partial
+overlap between these transitions and the scattering resonances of the d=685 nm dielectric nanosphere ({\bf Panel (d)}).
+The change in orbital populations ($D_p^p(t)-D_P^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
+The WGM shows much more efficient generation of hot-electrons ({\bf Panel (e)}) and hot-holes ({\bf Panel(f)}) compared to FP resonance in this case.}
 \end{center}
 \end{figure}
 
 
+
+In contrast to Au, small Pt nanoparticles do not support LSPR at visible wavelengths (see Figure 2 (d)), and consequently, we do not
+observe any overlap between an absorption resonance of the 2nm Pt NS and the dipole-allowed 
+transitions of our PIW Pt NC model.  We also consider
+the same geometries of the dielectric nanospheres as before ($d=285nm$ and $d=685 nm$); the scattering resonances of the former have partial overlap with transitions in the PIW Pt NC model at 1.6 and 1.8 eV, and the resonances of the latter have partial 
+overlap with transitions at 1.8, 1.8, and 1.95 eV.  Again, the dielectric scattering resonances provide 
+approximately an order of magnitude 
+nearfield enhancement in the vicinity of the Pt NC, while the nearfield enhancement provided by the lone 
+Pt NC is much smaller ($|{\bf E}|/|{\bf E_0}|$ at $\lambda=200nm$ corresponding to the extinction maximum, see Figure 2 (a), (b), and (c)).
+Due to its relatively weak optical interaction, scattering of the Pt NC does not lead to a large density of hot-carriers; small populations
+of carriers are created near the Fermi energy (see Figure S2).  These hot-carriers can be attributed mostly to direct interaction with the 
+incident pulse, which has a peak field strength of $E_0 \approx 614,000,000 \: V/m$,
+(see Supplemental Information for more details).
+In this case, SMA on the $d=285nm$ nanosphere
+leads to generation of hot carriers within 1 eV of the Fermi energy with dynamics that persist for moderate (~50 fs) timescales.
+The WGMs supported by the $d=685$ dielectric NS show much greater efficiency in creating energetic carriers compared
+to the resonances of the $d=285nm$ dielectric NS or the Pt NC.  For example, WGMs supported by the $d=685nm$ NS are three times
+more effective at generating holes in the lowest lying orbital ($E_F - 1.6 eV$) 
+and electrons in the highest 
+lying orbital ($E_F + 0.84 eV$) in the PIW Pt NC active space as compared to FP resonance of the $d=285nm$ NS (see Figure 2 (e) and (f)).  
+The hot-carriers driven by WGM also show much more persistent dynamics, and continue to evolve beyond 100 fs (see Figure 2 (e) and (f)).
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{figs/Au_WGM_Spectrum_and_Trajectories.png}
-\caption{Fine-shaping of the spatial and temporal shaping of the indicent field
-through the geometry of the dielectric nanosphere.  Panel {\bf (b)} shows
-the scattering spectra of a size progression of TiO$_2$ nanospheres that display
+\caption{Fine-shaping of the spatial and temporal shaping of the incident field
+through the geometry of the dielectric nanosphere.  Panel {\bf (a)} shows
+the scattering spectra of a size progression of dielectric nanospheres that display
 predominately Whispering Gallery Mode visible resonances.  The
 685nm nanosphere's scattering spectra has the best overlap with the dipole-allowed
 transitions in the Au NC model, and this structure shows most efficient
 generation of hot-electrons in the most energetic orbitals included in our
-active space (Panel {\bf (b)}), and more efficienty generation of
-hot holes in the lowest energy orbitals included in our active space (Panel 
+active space (Panel {\bf (b)}), and more efficiently generation of
+hot holes in the lowest energy orbitals included in our active space (Panel
 {\bf (c)}).   }
 \end{center}
 \end{figure}
 
 
+Clear distinction between the three regimes is also o
+The second figure (Figure 4) depicts the scattering spectra of a succession of differently sized dielectric nanospheres
+and their alignment with the gold dipole-allowed transitions. We observe that the nanosphere with diameter 685nm
+has the best alignment with the gold transitions, and similarly, the 685nm nanosphere is also most efficient
+in generating both hot-electrons and hot-holes. 
+
+Figure 5 also represents the scattering spectra of a succession of differently sized dielectric nanospheres and their alignment with
+Pt dipole-allowed transitions. 685nm diameter nanospheres display the most accurate alignment with Pt dipole allowed
+transitions, as was seen in Figure 4 for composite dielectric-Au structures.
+
+
+
+The scattering of the dielectric on the spectra compared with the Platinum transitions has a unique significance when 
+compared with the dielectric-Au structure. Although platinum is a non-plasmonic metal in the visible range, it is also 
+capable of generating hot-electrons and hot-holes within the visible light range. This demonstrates this method of 
+hot electron generation is independent of plasmonic activity and potentially can be expanded to various more abundant and cost efficient metals as opposed to Au. 
+The diameter size 685nm is able to excite hot electrons and hot holes on the metal nanocubes on its surface showing its increased 
+efficiency over the rest of the sizes. 
+Extra figures, to be found in the supplemental information accompanying this paper, show the change in 
+occupancy of all the orbitals (with different energies each) in the different structures at various times, 
+for the different metals. ( Should we arrange the figures in the supplemental information in groups based 
+upon structure, metal {for this paragraph this is how I will arrange them} or time step??) We are able to 
+observe in the figures for both metals, that the nano cube structures cease to change their orbital 
+occupancy after the 20th timestep. Similarly we find that the Fabry-Perot structures??
+
+
+\section{Supplementary Information}
+
+\subsection{Plots of Global Hot-Carrier Distributions}
+
 \begin{figure}
 \begin{center}
-\includegraphics[width=6in]{figs/Pt_WGM_Spectrum_and_Trajectories.png}
-\caption{Progressive scattering spectra of TiO$_2$ nanospheres overlayed with the dipole-allowed transitions of the Pt NC Model show partial overlap between
-the resonances of the 685 nm, 690 nm, and 695 nm nanospheres 
-(Panel {\bf (a)}).  The 685 nm nanosphere's scattering again shows
-greatest efficacy for generating hot-electrons in the most energetic
-orbitals and hot-holes in the lowest energy orbitals in our Pt NC model.}
+\includegraphics[width=6in]{figs/Au_HotElectronDistribution_Comparison.png}
+\caption{Snapshots of changes in occupation of each orbital in the active space of the PIW Au NC model as a measure of instantaneous hot-carrier distributions.
+The change in orbital occupation is computed from elements of the time-dependent one-electron reduced density matrix ($^1$RDM) relative to
+their initial value, $D_p^p(t)-D_P^p(t=0)$ for several timepoints in the simulation.}
 \end{center}
 \end{figure}
 
 
-\section{Methods}
+\begin{figure}
+\begin{center}
+\includegraphics[width=6in]{figs/Pt_HotElectronDistribution_Comparison.png}
+\caption{Snapshots of changes in occupation of each orbital in the active space of the PIW Pt NC model as a measure of instantaneous hot-carrier distributions.
+The change in orbital occupation is computed from elements of the time-dependent one-electron reduced density matrix ($^1$RDM) relative to
+their initial value, $D_p^p(t)-D_P^p(t=0)$ for several timepoints in the simulation.  }
+\end{center}
+\end{figure}
+
+\newpage
 
 %\subsection{Time-dependent configuration-interaction singles method}
 %We use the time-dependent configuration interaction singles (TD-CIS) method to elucidate the
@@ -294,45 +416,45 @@ orbitals and hot-holes in the lowest energy orbitals in our Pt NC model.}
 
 
 
-\subsection{Electronic structure of metal nanospheres}
-For spherical metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-spherical-well. 
-For a particle confined by a spherical well with radius $R$, the potential is 0 when $r<R$ and infinity with $r \geq R$, so that only kinetic energy contributes
-to the energetics.
-The energy eigenstates have the form~\cite{KS_JCP_1983,SKD_Nature_2012} 
-\begin{equation}
-\psi_{n,l,m}(r,\theta,\phi) = j_l(\alpha r) Y_{l,m}(\theta,\phi),
-\end{equation}
-where $j_l(\alpha r)$ are the spherical Bessel functions are 
-$Y_{l,m}(\theta,\phi)$ are the spherical Harmonics.  
-In our numerical implementation, we use the asymptotic approximation of the spherical Bessel functions 
-$j_l(\alpha r) \approx {\rm cos}(\alpha r - \frac{\pi}{2} (l+1))/r$.  To evaluate the spherical harmonics, we use a recursive 
-algorithm described in Ref.~\citenum{Numerical} to evaluate the associated Legendre polynomials.  The energy eigenfunctions
-must vanish at $r=R$, which leads to the following form for the one-electron orbitals:
-\begin{equation}
-\psi_{n,l,m}(r,\theta,\phi)  = 
-\frac{2}{\sqrt{R}} 
-\frac{{\rm cos} \left( \frac{ \pi }{2}(2n + 2 + l)\frac{r}{R} - \frac{\pi}{2}(l+1)\right)}{r} \: Y_{l,m} (\theta,\phi).
-\end{equation}
-The energy eigenvalues have the form 
-\begin{equation}
-E_{n,l} = \frac{\hbar^2 \pi^2}{8 m R^2} \left(2 n + l + 2\right)^2.
-\end{equation}
-From the definition of the spherical polar coordinates, the $x$, $y$, and $z$ components of the transition dipole integrals have the form
-\begin{align}
-\langle \mu_x \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_x \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
-\langle \mu_y \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_y \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
-\langle \mu_z \rangle  = \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_z \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi, 
-\end{align}
-where $\hat{\mu}_x = -e \cdot r \cdot {\rm sin}\theta \: {\rm cos}\phi$, $\hat{\mu}_y = -e \cdot r \cdot {\rm sin}\theta \: {\rm sin}\phi$, 
-$\hat{\mu}_z = -e \cdot r \cdot {\rm cos}\theta$, and $e$ is the charge of the electron.
+%\subsection{Electronic structure of metal nanospheres}
+%For spherical metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-spherical-well. 
+%For a particle confined by a spherical well with radius $R$, the potential is 0 when $r<R$ and infinity with $r \geq R$, so that only kinetic energy contributes
+%to the energetic.
+%The energy eigenstates have the form~\cite{KS_JCP_1983,SKD_Nature_2012} 
+%\begin{equation}
+%\psi_{n,l,m}(r,\theta,\phi) = j_l(\alpha r) Y_{l,m}(\theta,\phi),
+%\end{equation}
+%where $j_l(\alpha r)$ are the spherical Bessel functions are 
+%$Y_{l,m}(\theta,\phi)$ are the spherical Harmonics.  
+%In our numerical implementation, we use the asymptotic approximation of the spherical Bessel functions 
+%$j_l(\alpha r) \approx {\rm cos}(\alpha r - \frac{\pi}{2} (l+1))/r$.  To evaluate the spherical harmonics, we use a recursive 
+%algorithm described in Ref.~\citenum{Numerical} to evaluate the associated Legendre polynomials.  The energy eigenfunctions
+%must vanish at $r=R$, which leads to the following form for the one-electron orbitals:
+%\begin{equation}
+%\psi_{n,l,m}(r,\theta,\phi)  = 
+%\frac{2}{\sqrt{R}} 
+%\frac{{\rm cos} \left( \frac{ \pi }{2}(2n + 2 + l)\frac{r}{R} - \frac{\pi}{2}(l+1)\right)}{r} \: Y_{l,m} (\theta,\phi).
+%\end{equation}
+%The energy eigenvalues have the form 
+%\begin{equation}
+%E_{n,l} = \frac{\hbar^2 \pi^2}{8 m R^2} \left(2 n + l + 2\right)^2.
+%\end{equation}
+%From the definition of the spherical polar coordinates, the $x$, $y$, and $z$ components of the transition dipole integrals have the form
+%\begin{align}
+%\langle \mu_x \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_x \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
+%\langle \mu_y \rangle =  \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_y \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi \\
+%\langle \mu_z \rangle  = \int_0^R \int_0^{2\pi} \int_0^{\pi} \psi^*_{n,l,m} \: \hat{\mu}_z \: \psi_{n',l',m'} \:  r^2 \: {\rm sin}\theta \: dr \: d\theta \: d\phi, 
+%\end{align}
+%where $\hat{\mu}_x = -e \cdot r \cdot {\rm sin}\theta \: {\rm cos}\phi$, $\hat{\mu}_y = -e \cdot r \cdot {\rm sin}\theta \: {\rm sin}\phi$, 
+%$\hat{\mu}_z = -e \cdot r \cdot {\rm cos}\theta$, and $e$ is the charge of the electron.
 
-In this work, we neglect the $x$ and $y$ components of the field and evaluate $\mu_z$ numerically, where the integral can be
-simplified to
-\begin{equation}
-\langle \mu_z \rangle = \delta_{m,m'} \cdot 2\pi \cdot \int_0^R \int_0^{2\pi} j_{n,l}(\alpha r) \: P_{n,l}({\rm cos} \: \theta) \: \hat{\mu}_z \: j_{n',l'}(\alpha r) \: P_{n',l'}({\rm cos} \: \theta) \: r^2 \: {\rm sin}\theta \: dr \: d\theta,
-\end{equation}
-where $j_{n,l}(\alpha r)$ denotes the asymptotic approximation to the Spherical Bessel Function (written explicitly in Eq. ) and $P_{n,l}({\rm cos} \: \theta)$ denotes
-the associated Legendre polynomial.
+%In this work, we neglect the $x$ and $y$ components of the field and evaluate $\mu_z$ numerically, where the integral can be
+%simplified to
+%\begin{equation}
+%\langle \mu_z \rangle = \delta_{m,m'} \cdot 2\pi \cdot \int_0^R \int_0^{2\pi} j_{n,l}(\alpha r) \: P_{n,l}({\rm cos} \: \theta) \: \hat{\mu}_z \: j_{n',l'}(\alpha r) \: P_{n',l'}({\rm cos} \: \theta) \: r^2 \: {\rm sin}\theta \: dr \: d\theta,
+%\end{equation}
+%where $j_{n,l}(\alpha r)$ denotes the asymptotic approximation to the Spherical Bessel Function (written explicitly in Eq. ) and $P_{n,l}({\rm cos} \: \theta)$ denotes
+%the associated Legendre polynomial.
 
 \subsection{Electronic structure of metal nanocubes}
 For cubic metal nanoparticles, we approximate the one-electron orbitals as energy eigenstates of the particle-in-a-cubic-well.  
@@ -343,17 +465,69 @@ have the form
 \end{equation}
 The energy eigenvalues have the form
 \begin{equation}
-E_{nx,ny,nz} = \frac{\hbar^2 \pi^2}{2 \: m \: L^2}\left(n_x^2 + n_y^2 + n_z^2\right).
+\epsilon_{nx,ny,nz} = \frac{\hbar^2 \pi^2}{2 \: m \: L^2}\left(n_x^2 + n_y^2 + n_z^2\right).
 \end{equation}
 The transition dipole integrals can be evaluated analytically,
 \begin{align*}
 \langle \psi_{nx,ny,nz} |  \hat{\mu}_x | \psi_{nx',ny',nz'} \rangle = e \: \delta_{ny,ny'} \: \delta_{nz,nz'} \:
 \frac{L (\pi (n_x - n_x'){\rm sin}(\pi(n_x - n_x'))+{\rm cos}(\pi(n_x-n_x'))-1) }{\pi^2 (n_x - n_x')^2 } \\
 -  e \: \delta_{ny,ny'} \: \delta_{nz,nz'} \:
-\frac{L (\pi (n_x + n_x'){\rm sin}(\pi(n_x + n_x'))+{\rm cos}(\pi(n_x+n_x'))-1) }{\pi^2 (n_x + n_x')^2 }
+\frac{L (\pi (n_x + n_x'){\rm sin}(\pi(n_x + n_x'))+{\rm cos}(\pi(n_x+n_x'))-1) }{\pi^2 (n_x + n_x')^2 },
 \end{align*}
+where $\hat{\mu}_x = -e x$.  Analagous expressions can be obtained for expectation values of $\hat{\mu}_y$ and $\hat{\mu}_z$. 
 
-\section{Acknowledgement}
+We order the orbitals by a single index $p$ such that $\epsilon_{p+1} \geq \epsilon_p$; that is,
+each $\psi_{nx,ny,nz}$ can be uniquely labelled $\psi_q$.
+Using the above expressions and this unique labelling, the diagonal matrix elements can be evaluated as
+\begin{align}
+\langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle = \sum_{p=1}^{nocc} \epsilon_p \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_i^a \rangle = \sum_{p=1}^{nocc} \epsilon_p - \epsilon_i + \epsilon_a
+\end{align}
+and the off-diagonal matrix elements can be evaluated as
+\begin{align}
+\langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle = \langle \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_a \rangle \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle = \delta_{ij} \psi_a | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_b \rangle - \delta_{ab} \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_j \rangle.
+\end{align} 
+
+  % \langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle    &     \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle    \\
+  %\langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}.
+
+
+
+\subsection{Finite-difference time-domain calculations}
+A commercial simulator based on the finite-difference time-domain method~\cite{Lumerical} was used to compute the electric field, $E(t)$
+1 \AA $\:$  
+away from the nanoparticle surface in each of the scenarios considered.  The displacement
+was taken along the $z$-axis, corresponding to the polarization direction of incident light since the strongest
+near-field enhancement is expected along this direction.  A grid spacking of 1 \AA $\:$  
+in $x$, $y$, and $z$ was utilized
+in a cubic region extending 1 nm beyond the metal NP surface, and a non-uniform mesh was utilized otherwise with $dx$, $dy$, $dz \leq 20 nm$.
+For each composite structure, a nanoparticle was placed at the surface of the dielectric nanosphere at an angle of
+20$^{\circ}$ with respect to the propagation axis of the incident light. In all simulations, light propagates
+along the $x$ axis and is polarized along the $z$ axis.  The metal nanoparticles are centered at $y=0$.  
+A total-field scattered-field source was used to illuminate the structures.  The FDTD simulations were terminated when the 
+ratio of the total energy in the simulation volume to the total energy injected by the illumination source falls below
+$10^{-6}$.  Because the WGMs are higher quality factor resonances, longer time is typically required for these simulations
+as compared to the plasmonic particles alone.  
+
+The resulting time-domain fields were fed into our TDCIS algorithm, allowing us to simulate the electronic dynamics
+driven by rigorously-computed nearfields from scattering and plasmon resonances, which show strong spatiotemporal modification relative
+to freely propagating light.  The electric field was scaled by a factor $E_0 \approx 614,000,000 \: V/m$ so that the peak power
+of the illumination source is $10^{15} \: W/m^2$.  The electric field was sampled at intervals of approximately 2.8 attoseconds for all simulations, which leads
+to a time-step that ensures stability of
+the wavefunction propagation with the relevant energy scales of our simulations.  Our TDCIS scheme
+requires the evaluation of the electric field at intermediate times between these timesteps, and we use a simple update
+based on centered-finite differences to approximate the electric fields at these times.  As an example, if the 
+electric field is known at times $t_1$, $t_2 = t_1 + dt$, and $t_3 = t_1 + 2\cdot dt$ where $dt = 2.8 \: as$, and knowledge
+of the field is required at some time $t_m = t_2 + m\cdot dt$ where $m$ is non-integer, $E(t_m)$ is estimated as follows: 
+\begin{equation}
+{\bf E}(t_m) =  {\bf E}(t_2) + \frac{{\bf E}(t_3)-{\bf E}(t_1) }{t_3 - t_1 } \cdot m\cdot dt.
+\end{equation}
+
+The optical response of Au and Pt in the FDTD simulations utilizes permitivity data from the work of Johnson and Christy~\cite{JC_PRB_1972} and Palik~\cite{Palik}, respectively.  We assume a static dielectric constant of 2.6 for
+the dielectric nanospheres in this work, which is comparable to the visible dielectric constant of titanium dioxide. 
+
+\section{Acknowledgment}
 This work was performed, in part, utilizing resources at
 the Center for Nanoscale Materials, a US Department of Energy, Office of Science, Office of
 Basic Energy Sciences User Facility (contract no. DE-AC02-06CH11357).

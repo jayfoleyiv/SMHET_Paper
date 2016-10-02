@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  2 OCT 2016 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  2 OCT 2016 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -462,28 +462,21 @@ Package pdftex.def Info: figs/Pt_HotElectronDistribution_Comparison.png used on
  input line 359.
 (pdftex.def)             Requested size: 433.62pt x 235.42793pt.
  [14]
-Overfull \hbox (8.91713pt too wide) in paragraph at lines 477--477
+Overfull \hbox (8.91713pt too wide) in paragraph at lines 476--476
 [] 
  []
 
 [15 <./figs/Au_HotElectronDistribution_Comparison.png>] [16 <./figs/Pt_HotElect
-ronDistribution_Comparison.png>] [17] (./SMHET.bbl
+ronDistribution_Comparison.png>] [17] (./SMHET.bbl [18]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [18]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no ˆ in font cmr12!
-Missing character: There is no ’ in font cmr12!
  [19]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
@@ -491,6 +484,13 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [20]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -502,7 +502,6 @@ Missing character: There is no © in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [20]
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -532,7 +531,7 @@ ts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on SMHET.pdf (22 pages, 5182548 bytes).
+Output written on SMHET.pdf (22 pages, 5183047 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams
