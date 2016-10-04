@@ -305,6 +305,9 @@ hot holes in the lowest energy orbitals included in our active space (Panel
 {\bf (c)}).   }
 \end{center}
 \end{figure}
+To demonstrate the exquisite tunability of the dielectric scattering resonances, and their 
+commensurate impact on the electronic dynamics, we consider SMA by a series of Au-decorated dielectric
+nanospheres with sizes between 6
 -Frequency of scattering resonances can be systematically varied via geometry
 -Progression of geometries can be brought progressively into resonance with Au transitions
 -Both resonant and off-resonant scattering is observed to lead to efficient hot-carrier generation
@@ -316,7 +319,7 @@ and their alignment with the gold dipole-allowed transitions. We observe that th
 has the best alignment with the gold transitions, and similarly, the 685nm nanosphere is also most efficient
 in generating both hot-electrons and hot-holes. 
 
--
+
 The scattering of the dielectric on the spectra compared with the Platinum transitions has a unique significance when 
 compared with the dielectric-Au structure. Although platinum is a non-plasmonic metal in the visible range, it is also 
 capable of generating hot-electrons and hot-holes within the visible light range. This demonstrates this method of 
@@ -367,6 +370,10 @@ The energy eigenvalues have the form
 \begin{equation}
 \epsilon_{nx,ny,nz} = \frac{\hbar^2 \pi^2}{2 \: m \: L^2}\left(n_x^2 + n_y^2 + n_z^2\right).
 \end{equation}
+The transition dipole operator can be decomposed into its components,
+\begin{equation}
+{\bf \hat{\mu} } = \hat{\mu}_x {\bf \hat{i}} + \hat{\mu}_y {\bf \hat{j}} + \hat{\mu}_z {\bf \hat{k}}.
+\end{equation}
 The transition dipole integrals can be evaluated analytically,
 \begin{align*}
 \langle \psi_{nx,ny,nz} |  \hat{\mu}_x | \psi_{nx',ny',nz'} \rangle = e \: \delta_{ny,ny'} \: \delta_{nz,nz'} \:
@@ -380,13 +387,13 @@ We order the orbitals by a single index $p$ such that $\epsilon_{p+1} \geq \epsi
 each $\psi_{nx,ny,nz}$ can be uniquely labeled $\psi_p$.
 Using the above expressions and following this labeling scheme, the diagonal matrix elements can be evaluated as
 \begin{align}
-\langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle = \sum_{p=1}^{nocc} \epsilon_p \\
-\langle \Phi_i^a | \hat{H}(t) | \Phi_i^a \rangle = \sum_{p=1}^{nocc} \epsilon_p - \epsilon_i + \epsilon_a
+\langle \Phi_0 | \hat{H}(t) | \Phi_0 \rangle &= \sum_{p=1}^{nocc} \epsilon_p \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_i^a \rangle &= \sum_{p=1}^{nocc} \epsilon_p - \epsilon_i + \epsilon_a
 \end{align}
 and the off-diagonal matrix elements can be evaluated as
 \begin{align}
-\langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle = \langle \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_a \rangle \\
-\langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle = \delta_{ij} \psi_a | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_b \rangle - \delta_{ab} \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_j \rangle.
+\langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle &= \langle \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_a \rangle \\
+\langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle &= \delta_{ij} \langle \psi_a | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_b \rangle - \delta_{ab} \psi_i | {\bf E}(t) \cdot {\bf \hat{\mu}} | \psi_j \rangle.
 \end{align} 
 
 
