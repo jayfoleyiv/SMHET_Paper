@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{33}
+\begin{mcitethebibliography}{31}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -219,7 +219,7 @@ Brown,~A.~M.; Sundararaman,~R.; Narang,~P.; {Goddard III},~W.~A.;
 \EndOfBibitem
 \bibitem[Kraus and Schatz(1983)Kraus, and Schatz]{KS_JCP_1983}
 Kraus,~W.~A.; Schatz,~G.~C. Plasmon resonance broadening in small metal
-  particles. \emph{J. Chem. Phys.} \textbf{1983}, \emph{79}, 6130−6139\relax
+  particles. \emph{J. Chem. Phys.} \textbf{1983}, \emph{79}, 6130 -- 6139\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -254,7 +254,7 @@ Kumarasinghe,~C.~S.; Premaratne,~M.; Bao,~Q.; Agrawal,~G.~P. Theoretical
   de Abajo}]{SAG_ACSPhotonics_2016}
 Saavedra,~J. R.~M.; Asenjo-Garcia,~A.; { Garc\'ia de Abajo},~F.~J. Hot-Electron
   Dynamics and Thermalization in Small Metallic Nanoparticles. \emph{ACS
-  Photonics} \textbf{2016}, \emph{0}, null\relax
+  Photonics} \textbf{2016}, \emph{3}, 1637--1646\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -285,20 +285,6 @@ Sanz-Serna,~J.~M.; Portillo,~A. Classical numerical integrators for wave-packet
 \bibitem[Bohren and Huffman(1998)Bohren, and Huffman]{Bohren}
 Bohren,~C.~F.; Huffman,~D.~R. \emph{Absorption and Scattering of Light by Small
   Particles}; John Wiley and Sons, 1998\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Johnson and Christy(1972)Johnson, and Christy]{JC_PRB_1972}
-Johnson,~P.~B.; Christy,~R.~W. Optical constants of noble metals. \emph{Phys.
-  Rev. B} \textbf{1972}, \emph{6}, 4370\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Palik(1998)]{Palik}
-Palik,~E.~D. \emph{Handbook of optical constants of solids}; Academic Press,
-  1998\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
