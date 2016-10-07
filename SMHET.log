@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  7 OCT 2016 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  7 OCT 2016 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,49 +410,45 @@ Package gensymb Warning: Not defining \micro.
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/nanosphere_WGMv2.png, id=13, 1204.5pt x 401.5803pt>
-File: figs/nanosphere_WGMv2.png Graphic file (type png)
+<nanosphere_WGMv2.png, id=13, 1204.5pt x 401.5803pt>
+File: nanosphere_WGMv2.png Graphic file (type png)
 
-<use figs/nanosphere_WGMv2.png>
-Package pdftex.def Info: figs/nanosphere_WGMv2.png used on input line 51.
+<use nanosphere_WGMv2.png>
+Package pdftex.def Info: nanosphere_WGMv2.png used on input line 51.
 (pdftex.def)             Requested size: 256.0748pt x 85.37604pt.
 
 Underfull \vbox (badness 10000) detected at line 51
  []
 
-[2 <./figs/nanosphere_WGMv2.png>]
+[2 <./nanosphere_WGMv2.png>]
 Overfull \hbox (4.0786pt too wide) in paragraph at lines 70--79
 []\OT1/cmr/m/n/12 In PHET, the col-lec-tive plas-mon ex-ci-ta-tion de-cays rapi
 dly (on a  10 fem-tosec-ond timescale)
  []
 
-[3] [4] [5] [6]
-<figs/Au_AllThree_Alternate.png, id=38, 1307.88625pt x 688.5725pt>
-File: figs/Au_AllThree_Alternate.png Graphic file (type png)
+[3] [4] [5] [6] <Au_AllThree_Alternate.png, id=38, 1307.88625pt x 688.5725pt>
+File: Au_AllThree_Alternate.png Graphic file (type png)
 
-<use figs/Au_AllThree_Alternate.png>
-Package pdftex.def Info: figs/Au_AllThree_Alternate.png used on input line 181.
-
+<use Au_AllThree_Alternate.png>
+Package pdftex.def Info: Au_AllThree_Alternate.png used on input line 181.
 (pdftex.def)             Requested size: 433.62pt x 228.2908pt.
- [7] [8 <./figs/Au_AllThree_Alternate.png>] [9] [10] <figs/Pt_AllThree_Alternat
-e.png, id=54, 1303.87125pt x 680.5425pt>
-File: figs/Pt_AllThree_Alternate.png Graphic file (type png)
+ [7] [8 <./Au_AllThree_Alternate.png>] [9]
+[10] <Pt_AllThree_Alternate.png, id=54, 1303.87125pt x 680.5425pt>
+File: Pt_AllThree_Alternate.png Graphic file (type png)
 
-<use figs/Pt_AllThree_Alternate.png>
-Package pdftex.def Info: figs/Pt_AllThree_Alternate.png used on input line 250.
-
+<use Pt_AllThree_Alternate.png>
+Package pdftex.def Info: Pt_AllThree_Alternate.png used on input line 250.
 (pdftex.def)             Requested size: 433.62pt x 226.32426pt.
 
-<figs/Au_WGM_Spectrum_and_Trajectories.png, id=55, 667.74469pt x 362.85562pt>
-File: figs/Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
+<Au_WGM_Spectrum_and_Trajectories.png, id=55, 667.74469pt x 362.85562pt>
+File: Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
-<use figs/Au_WGM_Spectrum_and_Trajectories.png>
-Package pdftex.def Info: figs/Au_WGM_Spectrum_and_Trajectories.png used on inpu
-t line 285.
+<use Au_WGM_Spectrum_and_Trajectories.png>
+Package pdftex.def Info: Au_WGM_Spectrum_and_Trajectories.png used on input lin
+e 285.
 (pdftex.def)             Requested size: 433.62pt x 235.63742pt.
- [11 <./figs/Pt_AllThree_Alternate.png>] [12] [13 <./figs/Au_WGM_Spectrum_and_T
-rajectories.png>] [14]
-(./SMHET.bbl
+ [11 <./Pt_AllThree_Alternate.png>]
+[12] [13 <./Au_WGM_Spectrum_and_Trajectories.png>] [14] (./SMHET.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
@@ -469,7 +465,8 @@ Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
- [16]
+
+[16]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -489,8 +486,8 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [17] [18]) [19] (./SMHET.aux) ) 
 Here is how much of TeX's memory you used:
- 5170 strings out of 493339
- 79002 string characters out of 6141382
+ 5169 strings out of 493339
+ 78917 string characters out of 6141382
  151330 words of memory out of 5000000
  8534 multiletter control sequences out of 15000+600000
  11962 words of font info for 43 fonts, out of 8000000 for 9000
