@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  7 OCT 2016 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  9 OCT 2016 09:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,42 +410,42 @@ Package gensymb Warning: Not defining \micro.
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-<nanosphere_WGMv2.png, id=13, 1204.5pt x 401.5803pt>
-File: nanosphere_WGMv2.png Graphic file (type png)
+<nanosphere_WGMv3.png, id=13, 1204.5pt x 401.5803pt>
+File: nanosphere_WGMv3.png Graphic file (type png)
 
-<use nanosphere_WGMv2.png>
-Package pdftex.def Info: nanosphere_WGMv2.png used on input line 51.
+<use nanosphere_WGMv3.png>
+Package pdftex.def Info: nanosphere_WGMv3.png used on input line 51.
 (pdftex.def)             Requested size: 256.0748pt x 85.37604pt.
 
 Underfull \vbox (badness 10000) detected at line 51
  []
 
-[2 <./nanosphere_WGMv2.png>]
+[2 <./nanosphere_WGMv3.png (PNG copy)>]
 Overfull \hbox (4.0786pt too wide) in paragraph at lines 70--79
 []\OT1/cmr/m/n/12 In PHET, the col-lec-tive plas-mon ex-ci-ta-tion de-cays rapi
 dly (on a  10 fem-tosec-ond timescale)
  []
 
-[3] [4] [5] [6] <Au_AllThree_Alternate.png, id=38, 1307.88625pt x 688.5725pt>
+[3] [4] [5] [6] <Au_AllThree_Alternate.png, id=36, 1307.88625pt x 688.5725pt>
 File: Au_AllThree_Alternate.png Graphic file (type png)
 
 <use Au_AllThree_Alternate.png>
-Package pdftex.def Info: Au_AllThree_Alternate.png used on input line 181.
+Package pdftex.def Info: Au_AllThree_Alternate.png used on input line 182.
 (pdftex.def)             Requested size: 433.62pt x 228.2908pt.
  [7] [8 <./Au_AllThree_Alternate.png>] [9]
-[10] <Pt_AllThree_Alternate.png, id=54, 1303.87125pt x 680.5425pt>
+[10] <Pt_AllThree_Alternate.png, id=53, 1303.87125pt x 680.5425pt>
 File: Pt_AllThree_Alternate.png Graphic file (type png)
 
 <use Pt_AllThree_Alternate.png>
-Package pdftex.def Info: Pt_AllThree_Alternate.png used on input line 250.
+Package pdftex.def Info: Pt_AllThree_Alternate.png used on input line 251.
 (pdftex.def)             Requested size: 433.62pt x 226.32426pt.
 
-<Au_WGM_Spectrum_and_Trajectories.png, id=55, 667.74469pt x 362.85562pt>
+<Au_WGM_Spectrum_and_Trajectories.png, id=54, 667.74469pt x 362.85562pt>
 File: Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
 <use Au_WGM_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: Au_WGM_Spectrum_and_Trajectories.png used on input lin
-e 285.
+e 286.
 (pdftex.def)             Requested size: 433.62pt x 235.63742pt.
  [11 <./Pt_AllThree_Alternate.png>]
 [12] [13 <./Au_WGM_Spectrum_and_Trajectories.png>] [14] (./SMHET.bbl
@@ -486,10 +486,10 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [17] [18]) [19] (./SMHET.aux) ) 
 Here is how much of TeX's memory you used:
- 5169 strings out of 493339
- 78917 string characters out of 6141382
- 151330 words of memory out of 5000000
- 8534 multiletter control sequences out of 15000+600000
+ 5185 strings out of 493339
+ 79269 string characters out of 6141382
+ 151610 words of memory out of 5000000
+ 8550 multiletter control sequences out of 15000+600000
  11962 words of font info for 43 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  60i,8n,94p,1524b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -509,9 +509,9 @@ ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on SMHET.pdf (19 pages, 4334970 bytes).
+Output written on SMHET.pdf (19 pages, 4135964 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
+ 138 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)

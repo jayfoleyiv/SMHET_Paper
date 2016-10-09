@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{31}
+\begin{mcitethebibliography}{35}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -275,9 +275,44 @@ Bernardi,~M.; Mustafa,~J.; Neaton,~J.~B.; Louie,~S.~G. Theory and computation
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Szabo and Ostlund(1989)Szabo, and Ostlund]{Szabo}
+Szabo,~A.; Ostlund,~N.~S. \emph{Modern Quantum Chemistry: Introduction to
+  Advanced Electronic Structure Theory}, 1st ed.; McGraw-Hill, 1989\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Sanz-Serna and Portillo(1996)Sanz-Serna, and Portillo]{SP_JCP_96}
 Sanz-Serna,~J.~M.; Portillo,~A. Classical numerical integrators for wave-packet
   dynamics. \emph{J. Chem. Phys.} \textbf{1996}, \emph{104}, 2349--2355\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Krause \latin{et~al.}(2005)Krause, Klamroth, and
+  Saalfrank]{KKS_JCP_2005}
+Krause,~P.; Klamroth,~T.; Saalfrank,~P. Time-dependent
+  configuration-interaction calculations of laser-pulse-driven many-electron
+  dynamics: Controlled dipole switching in lithium cyanide. \emph{J. Chem.
+  Phys.} \textbf{2005}, \emph{123}, 074105\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Greenman \latin{et~al.}(2010)Greenman, Ho, Kamarchik, Mazziotti, and
+  Santra]{GHP_PRA_2010}
+Greenman,~L.; Ho,~P.~J.; Kamarchik,~E.; Mazziotti,~D.~A.; Santra,~R.
+  Implementation of the time-dependent configuration-interaction singles method
+  for atomic strong-field processes. \emph{Phys. Rev. A} \textbf{2010},
+  \emph{82}, 023406\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{DePrince III} \latin{et~al.}(2011){DePrince III}, Pelton, Guest, and
+  Gray]{DPG_PRL_2011}
+{DePrince III},~A.~E.; Pelton,~M.; Guest,~J.~R.; Gray,~S.~K. \emph{Phys. Rev.
+  Lett.} \textbf{2011}, \emph{107}, 196806\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
