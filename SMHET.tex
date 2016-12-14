@@ -108,13 +108,13 @@ hot carrier excitation and decay dynamics~\cite{SAG_ACSPhotonics_2016}.  The uti
 has also provided valuable insights into the role that a metal's band-structure plays
 in determining the efficiency of hot carrier generation, and particularly in the asymmetry between hot-electron
 and hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
-and found negligible impact on hot carrier generation and dynamics in Ag nanospheres resulting from electron correlation~\cite{MLK_ACSNano_2014}, 
+and found negligible impact on hot carrier generation and dynamics in Ag nanospheres resulting from electron correlation~\cite{MLK_ACSNano_2014}.   
 though Bernardi {\it et al} have demonstrated that many-body effects are important in the hot carrier dynamics resulting
 from surface plasmon polaritons in gold and silver~\cite{BMN_NatComm_2015}.
 
 We develop a novel approach for studying hot carrier dynamics that may arise from arbitrary electromagnetic
 fields, including the unique near-fields that arise from SMA on hybrid dielectric-metal nanoparticles and LSPR
-on noble metal nanoparticles.  Importantly, this method goes beyond a perturbative inclusion of the electric field and enables us to follow the electronic degrees of freedom subject to strong fields with arbitrary time-dependence, which are characteristic of SMA and LSPR.  
+on noble metal nanoparticles.  Importantly, this method goes beyond a perturbative inclusion of the electric field and enables us to follow the electronic degrees of freedom subject to strong fields with arbitrary time-dependence, which are characteristic of SMA and LSPR.   
 
 We consider the electronic degrees of freedom on the metal nanoparticle subject to the time-dependent Hamiltonian 
 \begin{equation}\label{eq:TDHam}
@@ -153,10 +153,20 @@ matrix.  The Hamiltonian matrix is comprised of three unique classes of elements
   \langle \Phi_j^b | \hat{H}(t) | \Phi_0 \rangle    &   \langle \Phi_j^b | \hat{H}(t) | \Phi_i^a \rangle \end{pmatrix}.
 \end{equation}
 Explicit expressions for each class of matrix elements are given in the SI.
+\textcolor{red}{Importantly, the lower diagonal block of the CIS Hamiltonian matrix contains terms which couple together
+different excited configurations.  In particular, transitions between singly-excited configurations which differ
+in only one unnoccupied index ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) or which differ in only one occupied index
+ ($|\Phi_i^a\rangle \rightarrow |\Phi_j^a\rangle$) are enabled by the terms in the lower diagonal block.  Such excited-state to excited-state transitions are absent from approaches based including linear response TDDFT and approaches which use time-dependent perturbation
+ theory to first order, as these only include transitions between ground- and singly-excited configurations ($|\Phi_0\rangle \rightarrow |\Phi_i^b\rangle$)%%%%% Need citations here!.
+The ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) and ($|\Phi_i^a\rangle \rightarrow |\Phi_j^a\rangle$) are important in this context because the fields that arise from SMA continue to evolve on long (>100 fs) timescale.  On this timescale, population can 
+accumulate in excited-state configurations, enabling the SMA fields to drive transitions between excited configurations as well as from the ground-state configuration (see Figure SX and accompanying explanation for more information).} 
 
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
-this work neglects excited-state decay contributions from electron-electron scattering.  These contributions will be explored in future work.  
+this work neglects excited-state thermalization contributions from electron-electron scattering.  
+\textcolor{red}{}
+These contributions will be explored in future work.  
+
 Also because of the diagonal nature of the field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
 of the field-free Hamiltonian.  This simplifies the interpretation of the electronic structure relative to the CIS 
 wavefunction in quantum chemistry applications where electron repulsion is included in the Hamiltonian
