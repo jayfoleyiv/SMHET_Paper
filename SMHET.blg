@@ -5,44 +5,44 @@ The style file: achemso.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: acs-SMHET.bib
 Database file #2: SMHET.bib
-You've used 35 entries,
+You've used 36 entries,
             2478 wiz_defined-function locations,
-            958 strings with 13127 characters,
-and the built_in function-call counts, 13176 in all, are:
-= -- 1022
-> -- 827
+            964 strings with 13308 characters,
+and the built_in function-call counts, 13504 in all, are:
+= -- 1050
+> -- 845
 < -- 14
-+ -- 325
-- -- 291
-* -- 1485
-:= -- 1792
-add.period$ -- 64
-call.type$ -- 35
++ -- 332
+- -- 297
+* -- 1522
+:= -- 1836
+add.period$ -- 66
+call.type$ -- 36
 change.case$ -- 4
 chr.to.int$ -- 3
-cite$ -- 35
-duplicate$ -- 733
-empty$ -- 871
-format.name$ -- 337
-if$ -- 2521
+cite$ -- 36
+duplicate$ -- 752
+empty$ -- 894
+format.name$ -- 344
+if$ -- 2584
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 227
-num.names$ -- 102
-pop$ -- 64
+newline$ -- 233
+num.names$ -- 105
+pop$ -- 66
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
 skip$ -- 1
 stack$ -- 0
-substring$ -- 732
-swap$ -- 807
-text.length$ -- 68
+substring$ -- 748
+swap$ -- 826
+text.length$ -- 70
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 236
+type$ -- 243
 warning$ -- 0
-while$ -- 120
+while$ -- 124
 width$ -- 0
-write$ -- 457
+write$ -- 470

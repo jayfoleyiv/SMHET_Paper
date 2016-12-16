@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{35}
+\begin{mcitethebibliography}{36}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -278,6 +278,15 @@ Bernardi,~M.; Mustafa,~J.; Neaton,~J.~B.; Louie,~S.~G. Theory and computation
 \bibitem[Szabo and Ostlund(1989)Szabo, and Ostlund]{Szabo}
 Szabo,~A.; Ostlund,~N.~S. \emph{Modern Quantum Chemistry: Introduction to
   Advanced Electronic Structure Theory}, 1st ed.; McGraw-Hill, 1989\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Narang \latin{et~al.}(2016)Narang, Sundararaman, and
+  Atwater]{Atwater_Review}
+Narang,~P.; Sundararaman,~R.; Atwater,~H.~A. Plasmonic hot carrier dynamics in
+  solid-state and chemical systems for energy conversion. \emph{Nanophotonics}
+  \textbf{2016}, \emph{5}, 96--11\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

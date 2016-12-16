@@ -6,6 +6,7 @@
 \usepackage{epsfig}
 \usepackage{multirow}
 \usepackage{multicol}
+\usepackage{color}
 
 \author{Jason Codrington$^{\dagger}$}
 \affiliation{Department of Chemistry, William Paterson University, 300 Pompton Road, Wayne, NJ, 07470, USA}
@@ -54,7 +55,7 @@ and for enabling unique pathways for photocatalytic transformations.
 
 %%\end{document}
 
-\section{Introduction}
+%%\section{Introduction}
 
 Various strategies that exploit the optical properties of metal nanoparticles, namely their ability to support localized surface plasmons resonances [LSPR], 
 which are collective oscillations of their 
@@ -75,7 +76,7 @@ large absorption cross sections associated with LSPR are also fundamentally rela
 distributions~\cite{KS_JCP_1983}. 
 Furthermore, the timescale of hot carrier relaxation competes 
 with transfer to adsorbate states (both occur on 100 fs timescales), which fundamentally limits the efficiency of energy transfer~\cite{WCM_Science_2015}.  \textcolor{red}{Finally, there are a limited number of materials that show promising plasmonic
-behaviors (most prominantly silver and gold), and it is desirable to extend the pallette of available materials to include
+behaviors (most prominently silver and gold), and it is desirable to extend the palette of available materials to include
 non-precious metals and metals with broader applicability in catalysis~\cite{SZZ_PNAS_2016}.}
 
 Considering this, an incredible opportunity exists to identify new classes of structures for mediating light-matter interactions and energy transfer events that offer the same advantages as metal nanoparticles, 
@@ -157,29 +158,44 @@ matrix.  The Hamiltonian matrix is comprised of three unique classes of elements
 Explicit expressions for each class of matrix elements are given in the SI.
 \textcolor{red}{Importantly, the lower diagonal block of the CIS Hamiltonian matrix contains terms which couple together
 different excited configurations.  In particular, transitions between singly-excited configurations which differ
-in only one unnoccupied index ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) or which differ in only one occupied index
+in only one unoccupied index ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) or which differ in only one occupied index
  ($|\Phi_i^a\rangle \rightarrow |\Phi_j^a\rangle$) are enabled by the terms in the lower diagonal block.  Such excited-state to excited-state transitions are absent from approaches based including linear response TDDFT and approaches which use time-dependent perturbation
  theory to first order, as these only include transitions between ground- and singly-excited configurations ($|\Phi_0\rangle \rightarrow |\Phi_i^b\rangle$)%%%%% Need citations here!.
-The ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) and ($|\Phi_i^a\rangle \rightarrow |\Phi_j^a\rangle$) are important in this context because the fields that arise from SMA continue to evolve on long (>100 fs) timescale.  On this timescale, population can 
-accumulate in excited-state configurations, enabling the SMA fields to drive transitions between excited configurations as well as from the ground-state configuration (see Figure SX and accompanying explanation for more information).} 
+The ($|\Phi_i^a\rangle \rightarrow |\Phi_i^b\rangle$) and ($|\Phi_i^a\rangle \rightarrow |\Phi_j^a\rangle$) are important in this context because the fields that arise from SMA continue to evolve on long ($>$100 fs) timescale.  On this timescale, population can 
+accumulate in excited-state configurations, enabling the SMA fields to drive transitions between excited configurations as well as from the 
+ground-state configuration (see Supporting Information and Figure S4 for more details).} 
 
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
 this work neglects excited-state thermalization contributions from electron-electron scattering.  
 \textcolor{red}{As shown in previous work, the inclusion of many-body effects can impact the calculation
 of hot-carrier distributions when transitions from $d$ bands are relevant, which is in principle whenever the perturbing
-field contains frequency components that overlap with interband transitions involving $d$ bands~\cite{MLK_ACSNano_2014,BMN_NatComm_2015, Atwater_Review}.  In this work, we explore SMA involving Ag, Au, and Pt nanoparticles, and we caution the reader that many-body effects 
-which are neglected in this work are expected to have an impact on the hot-carrier distributions predicted for Au and Pt, which both have energetic gaps between the $d$-band and the Fermi level which are smaller than energy components of the optical fields
-considered here.  Examination of these three metals within our model still presents considerable value because it provides
-insight into the hot-carriers in three distinct regimes of the driving field, which includes a superposition
+field contains frequency components that overlap with interband transitions involving $d$ bands~\cite{MLK_ACSNano_2014,BMN_NatComm_2015, Atwater_Review}.  
+In this work, we explore SMA involving Ag and Pt nanoparticles, and we wish to emphasize that the many-body effects 
+which are neglected in this work are expected to have an impact on the hot-carrier distributions in both of these metals, 
+as both have energetic gaps between the $d$-band and the Fermi level which are smaller than energy components of the optical fields
+considered here.  Examination of these two metals within our model still presents considerable value because it provides
+insight into hot-carrier dynamics in two distinct regimes of the driving field, which includes a superposition
 of the plasmon and dielectric scattering fields.  In particular, these regimes include (1) when the plasmon 
-resonance and the dielectric scattering resonance overlap in energy with transitions in the quantum model (i.e. SMA involving Au), 
-(2) when the dielectric scattering resonances has overlap with quantum transitions and the plasmon
-resonance overlaps partially (i.e. SMA involving Ag), and (3) when only the dielectric scattering resoances overlap with 
-quantum transitions (i.e. SMA involving Pt).  Future work will focus on further developments of this modeling approach to include
-many-body effects, and investigation of these effects on the hot-carrier distributions and dynamics resulting from SMA.}
+resonance and the dielectric scattering resonance overlap in energy with transitions in the quantum model 
+(i.e. SMA involving Au, see Figure 1 (d)), 
+and (2) when only the dielectric scattering resonances overlap with 
+quantum transitions (i.e. SMA involving Pt, see Figure 2 (d)).   
+We also choose Au and Pt because the SMA phenomenon
+has been experimentally demonstrated in both metals, including in the work by Sun and co-workers~\cite{ZHX_NatPhoton_2016} which
+considered SiO$_2$ nanospheres decorated with Pt nanoparticles of similar size to the particles considered here, and the work of 
+Zhang {\it et al.}~\cite{ZJM_ACSNano_2016} which considered
+TiO$_2$ nanospheres decorated with large Au nanoparticles.  It has been shown that many-body effects have less of an impact
+on hot-carrier dynamics in Ag nanoparticles due to the relatively large ($> 3eV)$ gap between the $d$ bands and the Fermi level~\cite{MLK_ACSNano_2014,Atwater_Review}, and so
+analogous calculations have been performed on Ag-decorated nanospheres showing similar qualitative features
+as results with Au and Pt (see Supporting Information and Figure S3).
+  Future work will focus on further developments of this modeling approach to include
+many-body effects, and investigation of these effects on the hot-carrier distributions and dynamics resulting from SMA.  It is expected
+that these effects will play a role in the hot-carrier dynamics in several ways, including by changing the available excitation/transition channels
+by mixing of the single-particle states, modifying the transition rates through modification of transition dipole moments, and by enabling
+thermalization of the excited carriers through electron-electron scattering.}
 
-Also because of the diagonal nature of the field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
+Because of the diagonal nature of the field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
 of the field-free Hamiltonian.  This simplifies the interpretation of the electronic structure relative to the CIS 
 wavefunction in quantum chemistry applications where electron repulsion is included in the Hamiltonian
 and the excited electronic eigenfunctions are linear combinations of singly-excited configurations. 
@@ -201,7 +217,7 @@ the PIW NC model) so that the orbital energies can be readily computed (see SI f
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=6in]{Au_AllThree_Alternate.png}
+\includegraphics[width=6in]{Au_AllThree_Revision.png}
 \caption{Three regimes for light-matter interactions leading to unique
 spatial and temporal shaping of the incident field, and the corresponding
 impact on electronic dynamics in a $L=2nm$ PIW Au nanocube. Plots of the near-field enhancements (${\bf |E|}/{\bf |E_0|}$) are shown for the
@@ -270,7 +286,7 @@ a period of ~100 fs (see Figure 2 (e) and (f)).
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=6in]{Pt_AllThree_Alternate.png}
+\includegraphics[width=6in]{Pt_AllThree_Revision.png}
 \caption{Three regimes for light-matter interactions leading to unique
 spatial and temporal shaping of the incident field, and the corresponding
 impact on electronic dynamics in a $L=2nm$ PIW Pt nanocube. Plots of the near-field enhancements (${\bf |E|}/{\bf |E_0|}$) are shown of the
@@ -325,11 +341,31 @@ nanospheres.  This progression from $d=705 nm$ to $d=685 nm$ brings the dielectr
 into resonance with the dipole-allowed transition in the PIW Au NC (see Figure 3 (a)).  We observe efficient hot carrier
 generation from SMA in all of these structures, though SMA from the $d=685 nm$ structure leads to most efficient generation
 of hot carriers in the highest and lowest energy orbitals in the Au NC active space (see Figure 3(b) and 3(c)), 
-most likely owing to the strong overlap between the scattering resonances and the transitions in the Au NC.
+most likely owing to the strong overlap between the scattering resonances and the transitions in the Au NC.  
 
-In this work, we have developed a multi-scale theoretical approach that utilizes time-domain electrodynamics to achieve a rigorous description of how light is shaped in space and time by interactions with complex nanostructured matter, and bridges this information with a real time-dependent configuration interaction singles approach to electronic dynamics.  Importantly, this method goes beyond a perturbative inclusion of the electric field and enables us to follow the electronic degrees of freedom subject to strong fields with arbitrary time-dependence~\cite{KKS_JCP_2005,GHP_PRA_2010,DPG_PRL_2011}, both of which are characteristic of the nearfields resulting from the nanophotonics resonances that were explored in this work.  The explicit inclusion of time-domain fields would also enable investigation of time-resolved spectroscopy experiments on similar structures, where the incident fields themselves may be shaped in space and time.  
+In this work, we have developed a multi-scale theoretical approach that utilizes time-domain electrodynamics to achieve a rigorous description of 
+how light is shaped in space and time by interactions with complex nanostructured matter, and bridges this information with a real 
+time-dependent configuration interaction singles approach to electronic dynamics.  Importantly, this method goes beyond a perturbative 
+inclusion of the electric field and enables us to follow the electronic degrees of freedom subject to strong fields with 
+arbitrary time-dependence~\cite{KKS_JCP_2005,GHP_PRA_2010,DPG_PRL_2011}, both of which are characteristic of the nearfields 
+resulting from the nanophotonics resonances that were explored in this work.  The explicit inclusion of time-domain fields would 
+also enable investigation of time-resolved spectroscopy experiments on similar structures, where the incident fields themselves may be shaped in space and time.  
 
-We have applied this methodology to the study hot carrier generation in novel hybrid nanostructures consisting of large dielectric core structures decorated by metal nanoparticles that enable the interplay between scattering resonances in the core structure and broadband absorption in the metal nanoparticles, a phenomena known as scattering mediated absorption.  We have shown that scattering mediated absorption can generate hot carriers while completely circumventing plasmonic resonance.  This result points to the potential for realizing efficient hot carrier generation and transfer in non-precious metals that are earth abundant and cost-effective; a possibility that will be explored in future work.   Our results also reveal that unique electronic dynamics can be realized by modulating the frequency and linewidth of the scattering resonances, which can be controlled by the size and/or refractive index of the dielectric structure.  In particular, high quality factor scattering resonances (e.g. whispering gallery modes) can induce electronic dynamics that persist for hundreds of femtoseconds, while plasmonic resonance induces field-driven dynamics on a timescale of ~10 fs.  The ability to drive excited-state dynamics of hot carriers through tuning of these resonances may have important implications for improving the efficiency and selectivity of photocatalysis via hot carrier transfer, which can be severely limited by the rapid decay of energetic carriers resulting from plasmon resonances.
+We have applied this methodology to the study hot carrier generation in novel hybrid nanostructures consisting of large dielectric 
+core structures decorated by metal nanoparticles that enable the interplay between scattering resonances in the core 
+structure and broadband absorption in the metal nanoparticles, a phenomena known as scattering mediated absorption.  
+We have shown that scattering mediated absorption can generate hot carriers while completely circumventing plasmonic resonance.  
+This result points to the potential for realizing efficient hot carrier generation and transfer in non-precious metals that are 
+earth abundant and cost-effective; \textcolor{red}{future investigations that utilize
+more realistic models of the electronic structure will be performed to develop a more detailed
+understanding of factors that influence the efficiency of hot-carrier generation in non- or poor plasmonic metals}.   Our results also reveal that 
+unique electronic dynamics can be realized by modulating the frequency and linewidth of the scattering resonances, which 
+can be controlled by the size and/or refractive index of the dielectric structure.  In particular, high quality 
+factor scattering resonances (e.g. whispering gallery modes) can induce electronic dynamics that persist for hundreds of 
+femtoseconds, while plasmonic resonance induces field-driven dynamics on a timescale of ~10 fs.  The ability to 
+drive excited-state dynamics of hot carriers through tuning of these resonances may have important implications 
+for improving the efficiency and selectivity of photocatalysis via hot carrier transfer, which can be 
+severely limited by the rapid decay of energetic carriers resulting from plasmon resonances.
 
 \section{Associated Content}
 Additional Figures illustrating hot carrier distributions and dynamics, as well as details of the time-dependent
