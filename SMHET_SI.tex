@@ -123,7 +123,12 @@ and the off-diagonal matrix elements can be evaluated as
 \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle &=  {\bf E}(t) \cdot \langle \psi_i |  {\bf \hat{\mu}} | \psi_a \rangle \\
 \langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle &=   {\bf E}(t) \cdot \langle \psi_a |  {\bf \hat{\mu}} | \psi_b \rangle \delta_{ij}  - {\bf E}(t) \cdot \langle \psi_i | {\bf \hat{\mu}} | \psi_j \rangle \delta_{ab}.
 \end{align} 
-\textcolor{red}{Importantly, terms analogous to those in Eq. (9) are not included in methodologies like Linear Response Time-Dependent Density
+\textcolor{red}{The precise form of these matrix elements arise because of the antisymmetry 
+of the underlying many-electron wavefunction.  It is important to note
+that while coulomb repulsion is not included in our current approach, Pauli exclusion, which is
+an inherently many-body effect, is enforced by the antisymmetry
+of the wavefunction through the Slater-Condon rules used to derive the matrix elements in Eq. (8) and (9).
+Importantly, terms analogous to those in Eq. (9) are not included in methodologies like Linear Response Time-Dependent Density
 Functional Theory (LR-TDDFT) or methods that use time-dependent perturbation theory (TDPT) to first order.  In fact, setting
 the terms in Eq. (9) to zero yields TDPT expressions for the rates of the CIS coefficients.
 The terms in Eq. (9) have an important
