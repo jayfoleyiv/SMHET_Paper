@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{36}
+\begin{mcitethebibliography}{39}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -329,6 +329,30 @@ Greenman,~L.; Ho,~P.~J.; Kamarchik,~E.; Mazziotti,~D.~A.; Santra,~R.
 \bibitem[Bohren and Huffman(1998)Bohren, and Huffman]{Bohren}
 Bohren,~C.~F.; Huffman,~D.~R. \emph{Absorption and Scattering of Light by Small
   Particles}; John Wiley and Sons, 1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Peng \latin{et~al.}(2010)Peng, McMahon, Schatz, Gray, and Sun]{CTP_3}
+Peng,~S.; McMahon,~J.~M.; Schatz,~G.~C.; Gray,~S.~K.; Sun,~Y. Reversing the
+  size-dependence of surface plasmon resonances. \emph{Proc. Natl. Acad. Sci.
+  U.S.A.} \textbf{2010}, \emph{107}, 14530−14534\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Scholl \latin{et~al.}(2012)Scholl, Koh, and Dionne]{SKD_Nature_2012}
+Scholl,~J.~A.; Koh,~A.~L.; Dionne,~J.~A. Quantum plasmon resonances of
+  individual metallic nanoparticles. \emph{Nature} \textbf{2012}, \emph{483},
+  421--427\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sun \latin{et~al.}(2013)Sun, {Foley IV}, Peng, Li, and K.]{CTP}
+Sun,~Y.; {Foley IV},~J.~J.; Peng,~S.; Li,~Z.; K.,~G.~S. Interfaced metal
+  heterodimers in the quantum size regime. \emph{Nano Lett.} \textbf{2013},
+  \emph{13}, 3958--3964\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
