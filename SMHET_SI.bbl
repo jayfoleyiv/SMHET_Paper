@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{4}
+\begin{mcitethebibliography}{5}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -38,6 +38,14 @@ Johnson,~P.~B.; Christy,~R.~W. Optical constants of noble metals. \emph{Phys.
 \bibitem[Palik(1998)]{Palik}
 Palik,~E.~D. \emph{Handbook of optical constants of solids}; Academic Press,
   1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Coronado and Schatz(2003)Coronado, and Schatz]{CS_JCP_2003}
+Coronado,~E.~A.; Schatz,~G.~C. Surface plasmon broadening for arbitrary shape
+  nanoparticles: A geometrical probability approach. \emph{J. Chem. Phys.}
+  \textbf{2003}, \emph{119}, 3926\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
