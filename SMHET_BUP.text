@@ -227,7 +227,7 @@ Au NC LSPR ($\lambda=532 nm$, {\bf Panel (a)}), a Fabry-Perot resonance of a d=2
 and a Whispering Gallery Mode resonance of a d=685 nm dielectric nanosphere decorated with Au NCs ($\lambda = 493 nm$, {\bf Panel (c)}).
 The extinction spectra of these three structures are shown overlaid with the dipole-allowed transitions in the PIW model of the Au NC, showing particularly
 strong overlap between these transitions and the scattering resonances of the $d=685 nm$ dielectric nanosphere ({\bf Panel (d)}).
-The hot-carrier populations ($^1D_p^p(t)-^1D_p^p(t=0)$) are computed to measure hot-electron and hot-hole generation.
+The change in orbital populations ($D_p^p(t)-D_P^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
 Both dielectric scattering resonances show more efficient generation of hot-electrons ({\bf Panel (e)}) and hot-holes ({\bf Panel(f)}) compared to LSPR in this case.}
 \end{center}
 \end{figure}
@@ -297,7 +297,7 @@ Pt NC's extinction maximum ($\lambda=200 nm$, {\bf Panel (a)}), a Fabry-Perot re
 and a Whispering Gallery Mode resonance of a d=685 nm dielectric nanosphere decorated with Pt NCs ($\lambda = 493 nm$, {\bf Panel (c)}).
 The extinction spectra of these three structures are shown overlaid with the dipole-allowed transitions in the PIW model of the Pt NC, showing partial
 overlap between these transitions and the scattering resonances of the $d=685 nm$ dielectric nanosphere ({\bf Panel (d)}).
-The change in orbital populations ($^1D_p^p(t)-^1D_P^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
+The change in orbital populations ($D_p^p(t)-D_P^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
 The WGM shows much more efficient generation of hot-electrons ({\bf Panel (e)}) and hot-holes ({\bf Panel(f)}) compared to FP resonance in this case.}
 \end{center}
 \end{figure}
