@@ -64,7 +64,7 @@ Ag NC LSPR ($\lambda=400 nm$, {\bf Panel (a)}), a Fabry-Perot resonance of a d=2
 and a Whispering Gallery Mode resonance of a d=685 nm dielectric nanosphere decorated with Ag NCs ($\lambda = 493 nm$, {\bf Panel (c)}).
 The extinction spectra of these three structures are shown overlaid with the dipole-allowed transitions in the PIW model of the Ag NC, showing 
 strong overlap between these transitions and the scattering resonances of the $d=685 nm$ dielectric nanosphere ({\bf Panel (d)}) with only
-partial overlap between the Ag LSPR and dipole-allwed transitions in the PIW model.
+partial overlap between the Ag LSPR and dipole-allowed transitions in the PIW model.
 The change in orbital populations ($D_p^p(t)-D_p^p(t=0)$) is computed to measure hot-electron and hot-hole generation.
 Both dielectric scattering resonances show more efficient generation of hot-electrons ({\bf Panel (e)}) and hot-holes ({\bf Panel(f)}) compared to LSPR in this case.}
 \end{center}
@@ -123,19 +123,30 @@ and the off-diagonal matrix elements can be evaluated as
 \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle &=  {\bf E}(t) \cdot \langle \psi_i |  {\bf \hat{\mu}} | \psi_a \rangle \\
 \langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle &=   {\bf E}(t) \cdot \langle \psi_a |  {\bf \hat{\mu}} | \psi_b \rangle \delta_{ij}  - {\bf E}(t) \cdot \langle \psi_i | {\bf \hat{\mu}} | \psi_j \rangle \delta_{ab}.
 \end{align} 
-\textcolor{red}{Importantly, terms analogous to those in Eq. (9) are not included in methodologies like Linear Response Time-Dependent Density
+\textcolor{red}{The precise form of these matrix elements arise because of the antisymmetry 
+of the underlying many-electron wavefunction.  It is important to note
+that while coulomb repulsion is not included in our current approach, Pauli exclusion, which is
+an inherently many-body effect, is enforced by the antisymmetry
+of the wavefunction through the Slater-Condon rules used to derive the matrix elements in Eq. (6) through (9).
+Importantly, terms analogous to those in Eq. (9) are not included in methodologies like Linear Response Time-Dependent Density
 Functional Theory (LR-TDDFT) or methods that use time-dependent perturbation theory (TDPT) to first order.  In fact, setting
 the terms in Eq. (9) to zero yields TDPT expressions for the rates of the CIS coefficients.
 The terms in Eq. (9) have an important
 role in the hot-carrier dynamics in SMA because of the long lifetimes associated with the scattering resonances, and hence, the
-long duration of the optical fields that drive these dynamics.  The discrepency between is shown in Figure S4 where we perform
+long duration of the optical fields that drive these dynamics.  The discrepancy between is shown in Figure S4 where we perform
 two calculations with the same driving field: one where the full TDCIS equations are solved, and one where the terms in Eq. (9) 
-are set to zero, yielding TDPT in the CIS basis.} 
+are set to zero, yielding a equations of motion where only transitions between the ground- and singly-excited
+configurations are considered, similar to linear-response or TDPT-based approaches.} 
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{Ag_LR_vs_TDCIS.png}
-\caption{Comparison of hot-electron dynamics as computed from the full TDCIS method and time-dependent perturbation theory in 
-the CIS basis. }
+\caption{Comparison of hot-electron dynamics as computed from the full TDCIS method (purple
+line labelled SMA Full TDCIS) and one where
+excited-to-excited configurations are neglected in the spirit of approaches based on linear-response
+theory and time-dependent perturbation theory to first order (black line labelled SMA Linear Response).  While the two approaches agree at short
+times, the long-time dynamics can show significant departure as population accumulates
+in excited-state configurations.  These calculations consider 685 nm dielectric nanospheres (n=2.6)
+decorated with 2nm Ag nanocubes. }
 \end{center}
 \end{figure}
 
@@ -143,8 +154,10 @@ the CIS basis. }
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{Ag_SC_Compare.png}
-\caption{Comparison of hot-electron dynamics as computed from the full TDCIS method and time-dependent perturbation theory in
-the CIS basis. }
+\caption{Comparison of hot-electron dynamics with from SMA with (black line labelled SMA with SC) and without
+(purple line labelled SMA) a phenomenological size
+correction to the dielectric function of silver in 685 dielectric nanospheres (n=2.6) decorated with 2 nm Ag nanocubes.
+The size corrections are described in Eq. (11) - (14) of this Supporting Information document.  }
 \end{center}
 \end{figure}
 
@@ -179,9 +192,33 @@ of the field is required at some time $t_m = t_2 + m\cdot dt$ where $m$ is non-i
 {\bf E}(t_m) =  {\bf E}(t_2) + \frac{{\bf E}(t_3)-{\bf E}(t_1) }{t_3 - t_1 } \cdot m\cdot dt.
 \end{equation}
 
-The optical response of Au and Pt in the FDTD simulations utilizes permittivity data from the work of Johnson and Christy~\cite{JC_PRB_1972} and Palik~\cite{Palik}, respectively.  We assume a static dielectric constant of 2.6 for
+The optical response of Au, Pt, and Ag in the FDTD simulations utilizes permittivity 
+data from the work of Johnson and Christy~\cite{JC_PRB_1972} (Au) and Palik~\cite{Palik} (Pt and Ag).  
+We assume a static dielectric constant of 2.6 for
 the dielectric nanospheres in this work, which is comparable to the visible dielectric constant of titanium dioxide. 
-
+\textcolor{red}{The prototype calculation of the impacts on SMA resulting from size effects in the dielectric response
+of silver utilizes the phenomenological size correction for the plasmon damping rate in nanocubes suggested by 
+Coronado and Schatz~\cite{CS_JCP_2003},}
+\begin{equation}
+\gamma_{SC} = \gamma_{bulk} + \frac{A v_F}{L_{eff}}
+\end{equation}
+\textcolor{red}{where $L_{eff} = 2 L/3$ for cubes, where $L$ is 2 nm in this case, we take $A$ to b 1
+and $v_F$ is taken to be 1.39e6 $m/s$ for silver.    
+We incorporate $\gamma_{SC}$ into a Drude model for the intra-band contribution to silvers dielectric function,}
+\begin{equation}
+\epsilon_{Drude,SC}(\omega) = 1 - \frac{\omega_P^2}{\omega^2 + i\gamma_{SC}\omega}.
+\end{equation}
+\textcolor{red}{We take $\omega_P$ and $\gamma_{bulk}$ from a Drude+2Lorentz fit to the Palik data between 200-800 nm;
+specifically, $\hbar \omega_P = 8.73 eV$ and $\hbar \gamma_{bulk} = 0.075 eV$.  We infer the
+inter-band contribution to the dielectric function from the bulk experimental data and from the bulk Drude fit,}
+\begin{equation}
+\epsilon_{inter}(\omega) = \epsilon_{Palik}(\omega) - \epsilon_{Drude,bulk}(\omega).
+\end{equation}
+\textcolor{red}{Finally, the dielectric function used for the size-corrected calculations is defined as}
+\begin{equation}
+\epsilon_{SC}(\omega) = \epsilon_{inter}(\omega) + \epsilon_{Drude,SC}(\omega).
+\end{equation}
+\textcolor{red}{Results from these prototpye calculations are shown in Figure S5.}
 \bibliography{SMHET_SI} 
 
 \end{document}
