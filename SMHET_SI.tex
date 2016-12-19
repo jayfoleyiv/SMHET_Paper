@@ -88,17 +88,17 @@ The transition dipole operator can be decomposed into its components,
 \begin{equation}
 {\bf \hat{\mu} } = \hat{\mu}_x \: {\bf i} + \hat{\mu}_y \: {\bf j} + \hat{\mu}_z \: {\bf k}.
 \end{equation}
-\textcolor{red}{Given this model, the number of electrons for a given material can be estimated as}
+Given this model, the number of electrons for a given material can be estimated as
 \begin{equation}
 N_e = \frac{L^3}{3\pi^2} \left(\frac{2 m E_F}{\hbar^2}   \right)^{3/2}
 \end{equation}
-\textcolor{red}{where $E_F$ is the experimental Fermi energy for the bulk material of interest.  We assume close-shell systems in all cases and round to the next highest integer value of $N_e$.
-Similarly, the Fermi energy in our model can be defined as }
+where $E_F$ is the experimental Fermi energy for the bulk material of interest.  We assume close-shell systems in all cases and round to the next highest integer value of $N_e$.
+Similarly, the Fermi energy in our model can be defined as 
 \begin{equation}
 E_F^{PIW} = \frac{\hbar^2}{2m} \left(3\pi^2 \frac{N_e}{L^3}  \right)^{2/3},
 \end{equation}
-\textcolor{red}{where $E_F^{PIW}$ will often be slightly larger than the bulk value of the Fermi energy given that $N_e$ in the above expression
-will be rounded to the next highest integer.} 
+where $E_F^{PIW}$ will often be slightly larger than the bulk value of the Fermi energy given that $N_e$ in the above expression
+will be rounded to the next highest integer. 
 
 
 The transition dipole integral components can be evaluated analytically, for example, the 
@@ -123,7 +123,7 @@ and the off-diagonal matrix elements can be evaluated as
 \langle \Phi_0 | \hat{H}(t) | \Phi_i^a \rangle &=  {\bf E}(t) \cdot \langle \psi_i |  {\bf \hat{\mu}} | \psi_a \rangle \\
 \langle \Phi_i^a | \hat{H}(t) | \Phi_j^b \rangle &=   {\bf E}(t) \cdot \langle \psi_a |  {\bf \hat{\mu}} | \psi_b \rangle \delta_{ij}  - {\bf E}(t) \cdot \langle \psi_i | {\bf \hat{\mu}} | \psi_j \rangle \delta_{ab}.
 \end{align} 
-\textcolor{red}{The precise form of these matrix elements arise because of the antisymmetry 
+The precise form of these matrix elements arise because of the antisymmetry 
 of the underlying many-electron wavefunction.  It is important to note
 that while coulomb repulsion is not included in our current approach, Pauli exclusion, which is
 an inherently many-body effect, is enforced by the antisymmetry
@@ -136,7 +136,7 @@ role in the hot-carrier dynamics in SMA because of the long lifetimes associated
 long duration of the optical fields that drive these dynamics.  The discrepancy between is shown in Figure S4 where we perform
 two calculations with the same driving field: one where the full TDCIS equations are solved, and one where the terms in Eq. (9) 
 are set to zero, yielding a equations of motion where only transitions between the ground- and singly-excited
-configurations are considered, similar to linear-response or TDPT-based approaches.} 
+configurations are considered, similar to linear-response or TDPT-based approaches. 
 \begin{figure}
 \begin{center}
 \includegraphics[width=6in]{Ag_LR_vs_TDCIS.png}
@@ -196,29 +196,29 @@ The optical response of Au, Pt, and Ag in the FDTD simulations utilizes permitti
 data from the work of Johnson and Christy~\cite{JC_PRB_1972} (Au) and Palik~\cite{Palik} (Pt and Ag).  
 We assume a static dielectric constant of 2.6 for
 the dielectric nanospheres in this work, which is comparable to the visible dielectric constant of titanium dioxide. 
-\textcolor{red}{The prototype calculation of the impacts on SMA resulting from size effects in the dielectric response
+The prototype calculation of the impacts on SMA resulting from size effects in the dielectric response
 of silver utilizes the phenomenological size correction for the plasmon damping rate in nanocubes suggested by 
-Coronado and Schatz~\cite{CS_JCP_2003},}
+Coronado and Schatz~\cite{CS_JCP_2003},
 \begin{equation}
 \gamma_{SC} = \gamma_{bulk} + \frac{A v_F}{L_{eff}}
 \end{equation}
-\textcolor{red}{where $L_{eff} = 2 L/3$ for cubes, where $L$ is 2 nm in this case, we take $A$ to b 1
+where $L_{eff} = 2 L/3$ for cubes, where $L$ is 2 nm in this case, we take $A$ to b 1
 and $v_F$ is taken to be 1.39e6 $m/s$ for silver.    
-We incorporate $\gamma_{SC}$ into a Drude model for the intra-band contribution to silvers dielectric function,}
+We incorporate $\gamma_{SC}$ into a Drude model for the intra-band contribution to silvers dielectric function,
 \begin{equation}
 \epsilon_{Drude,SC}(\omega) = 1 - \frac{\omega_P^2}{\omega^2 + i\gamma_{SC}\omega}.
 \end{equation}
-\textcolor{red}{We take $\omega_P$ and $\gamma_{bulk}$ from a Drude+2Lorentz fit to the Palik data between 200-800 nm;
+We take $\omega_P$ and $\gamma_{bulk}$ from a Drude+2Lorentz fit to the Palik data between 200-800 nm;
 specifically, $\hbar \omega_P = 8.73 eV$ and $\hbar \gamma_{bulk} = 0.075 eV$.  We infer the
-inter-band contribution to the dielectric function from the bulk experimental data and from the bulk Drude fit,}
+inter-band contribution to the dielectric function from the bulk experimental data and from the bulk Drude fit,
 \begin{equation}
 \epsilon_{inter}(\omega) = \epsilon_{Palik}(\omega) - \epsilon_{Drude,bulk}(\omega).
 \end{equation}
-\textcolor{red}{Finally, the dielectric function used for the size-corrected calculations is defined as}
+Finally, the dielectric function used for the size-corrected calculations is defined as
 \begin{equation}
 \epsilon_{SC}(\omega) = \epsilon_{inter}(\omega) + \epsilon_{Drude,SC}(\omega).
 \end{equation}
-\textcolor{red}{Results from these prototype calculations are shown in Figure S5.}
+Results from these prototype calculations are shown in Figure S5.
 \bibliography{SMHET_SI} 
 
 \end{document}
