@@ -3,7 +3,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{39}
+\begin{mcitethebibliography}{40}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -278,6 +278,16 @@ Bernardi,~M.; Mustafa,~J.; Neaton,~J.~B.; Louie,~S.~G. Theory and computation
 \bibitem[Szabo and Ostlund(1989)Szabo, and Ostlund]{Szabo}
 Szabo,~A.; Ostlund,~N.~S. \emph{Modern Quantum Chemistry: Introduction to
   Advanced Electronic Structure Theory}, 1st ed.; McGraw-Hill, 1989\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Zuehlsdorff \latin{et~al.}(2013)Zuehlsdorff, Hine, Spencer, Harrison,
+  Riley, and Haynes]{ZHS_JCP_2013}
+Zuehlsdorff,~T.~J.; Hine,~N. D.~M.; Spencer,~J.~S.; Harrison,~N.~M.;
+  Riley,~D.~J.; Haynes,~P.~D. Linear-scaling time-dependent density-functional
+  theory in the linear response formalism. \emph{J. Chem. Phys.} \textbf{2013},
+  \emph{139}, 064104\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
