@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  19 DEC 2016 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  19 DEC 2016 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,18 +418,28 @@ Package gensymb Warning: Not defining \micro.
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \begin{keywords}
+                     
+? 
 <nanosphere_WGMv3.png, id=13, 1204.5pt x 401.5803pt>
 File: nanosphere_WGMv3.png Graphic file (type png)
 
 <use nanosphere_WGMv3.png>
-Package pdftex.def Info: nanosphere_WGMv3.png used on input line 52.
+Package pdftex.def Info: nanosphere_WGMv3.png used on input line 55.
 (pdftex.def)             Requested size: 256.0748pt x 85.37604pt.
 
-Underfull \vbox (badness 10000) detected at line 52
+Underfull \vbox (badness 10000) detected at line 55
  []
 
 [2 <./nanosphere_WGMv3.png (PNG copy)>]
-Overfull \hbox (4.0786pt too wide) in paragraph at lines 71--87
+Overfull \hbox (4.0786pt too wide) in paragraph at lines 73--89
 []\OT1/cmr/m/n/12 In PHET, the col-lec-tive plas-mon ex-ci-ta-tion de-cays rapi
 dly (on a  10 fem-tosec-ond timescale)
  []
@@ -439,14 +449,14 @@ dly (on a  10 fem-tosec-ond timescale)
 File: Au_AllThree_Revision.png Graphic file (type png)
 
 <use Au_AllThree_Revision.png>
-Package pdftex.def Info: Au_AllThree_Revision.png used on input line 229.
+Package pdftex.def Info: Au_AllThree_Revision.png used on input line 231.
 (pdftex.def)             Requested size: 433.62pt x 231.44078pt.
  [9] [10 <./Au_AllThree_Revision.png>] [11]
 <Pt_AllThree_Revision.png, id=56, 759.58781pt x 395.22656pt>
 File: Pt_AllThree_Revision.png Graphic file (type png)
 
 <use Pt_AllThree_Revision.png>
-Package pdftex.def Info: Pt_AllThree_Revision.png used on input line 298.
+Package pdftex.def Info: Pt_AllThree_Revision.png used on input line 300.
 (pdftex.def)             Requested size: 433.62pt x 225.62521pt.
 
 <Au_WGM_Spectrum_and_Trajectories.png, id=57, 667.74469pt x 362.85562pt>
@@ -454,7 +464,7 @@ File: Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
 <use Au_WGM_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: Au_WGM_Spectrum_and_Trajectories.png used on input lin
-e 339.
+e 341.
 (pdftex.def)             Requested size: 433.62pt x 235.63742pt.
  [12] [13 <./Pt_AllThree_Revision.png>] [14] [15 <./Au_WGM_Spectrum_and_Traject
 ories.png>] [16] [17] (./SMHET.bbl
@@ -499,10 +509,10 @@ Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
 ) [22] (./SMHET.aux) ) 
 Here is how much of TeX's memory you used:
- 5247 strings out of 493339
- 80375 string characters out of 6141382
+ 5248 strings out of 493339
+ 80386 string characters out of 6141382
  153826 words of memory out of 5000000
- 8608 multiletter control sequences out of 15000+600000
+ 8609 multiletter control sequences out of 15000+600000
  11962 words of font info for 43 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
  60i,8n,94p,1278b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -521,7 +531,7 @@ c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on SMHET.pdf (22 pages, 3819455 bytes).
+Output written on SMHET.pdf (22 pages, 3819492 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
