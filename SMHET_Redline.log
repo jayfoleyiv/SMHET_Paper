@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  13 JAN 2017 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.9.10)  13 JAN 2017 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,14 +440,14 @@ dly (on a  10 fem-tosec-ond timescale)
 File: Au_AllThree_Revision.png Graphic file (type png)
 
 <use Au_AllThree_Revision.png>
-Package pdftex.def Info: Au_AllThree_Revision.png used on input line 252.
+Package pdftex.def Info: Au_AllThree_Revision.png used on input line 246.
 (pdftex.def)             Requested size: 433.62pt x 231.44078pt.
  [11 <./Au_AllThree_Revision.png>] [12] [13]
 <Pt_AllThree_Revision.png, id=63, 759.58781pt x 395.22656pt>
 File: Pt_AllThree_Revision.png Graphic file (type png)
 
 <use Pt_AllThree_Revision.png>
-Package pdftex.def Info: Pt_AllThree_Revision.png used on input line 321.
+Package pdftex.def Info: Pt_AllThree_Revision.png used on input line 315.
 (pdftex.def)             Requested size: 433.62pt x 225.62521pt.
 
 <Au_WGM_Spectrum_and_Trajectories.png, id=64, 667.74469pt x 362.85562pt>
@@ -455,7 +455,7 @@ File: Au_WGM_Spectrum_and_Trajectories.png Graphic file (type png)
 
 <use Au_WGM_Spectrum_and_Trajectories.png>
 Package pdftex.def Info: Au_WGM_Spectrum_and_Trajectories.png used on input lin
-e 362.
+e 356.
 (pdftex.def)             Requested size: 433.62pt x 235.63742pt.
  [14 <./Pt_AllThree_Revision.png>]
 [15] [16 <./Au_WGM_Spectrum_and_Trajectories.png>] [17] [18]
@@ -523,7 +523,7 @@ lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb>
-Output written on SMHET_Redline.pdf (23 pages, 3822290 bytes).
+Output written on SMHET_Redline.pdf (23 pages, 3822188 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
