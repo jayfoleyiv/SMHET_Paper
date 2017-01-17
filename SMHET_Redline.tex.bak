@@ -111,7 +111,7 @@ potential wells~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_201
 (here called ``particle-in-a-well" [PIW] models), the Jellium model within the local density approximation (Jellium LDA)~\cite{MLK_ACSNano_2014},
 and atomistic density functional theory (DFT)~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
 In totality, these theoretical investigations have yielded a number of valuable insights into 
-the relative importance of particle geometry, material band structure, and electronic correlation effects on hot-carrier
+the relative importance of particle geometry, material bandstructure, and electronic correlation effects on hot-carrier
 generation in metal nanostructures.} 
 Using PIW models, Govorov and co-workers developed a theory of 
 hot carrier generation within the framework of time-dependent perturbation theory that
@@ -124,7 +124,7 @@ compared free-electron and Jellium-LDA models and found that correlation effects
 on hot carrier generation and dynamics in Ag nanospheres compared to geometric effects~\cite{MLK_ACSNano_2014}.} 
 \textcolor{red}{The utilization of atomistic DFT by Sundararaman {\it et al.}~\cite{SNJ_NatComm_2014}, 
 Louie and co-workers~\cite{BMN_NatComm_2015}, and Brown {\it et al}~\cite{BSN_ACSNano_2016} 
-has provided valuable insight into the role that metal band structure plays
+has provided valuable insight into the role that metal band-structure plays
 in determining the efficiency of hot carrier generation, the asymmetry between hot-electron
 and hot-hole generation, and the contributions to hot-carrier relaxation.}
 
@@ -147,10 +147,10 @@ us to follow the electronic degrees of freedom subject to strong fields with arb
 important as the nearfields from the scattering resonances continue to interact with the metal electrons 
 for 10s to 100s of femtoseconds.  Over these timescales, population accumulates in  
 various excited configurations and transitions between different excited configurations become important to the dynamics.  
-This is a unique feature of SMA that is likely unimportant to in plasmonic generation of hot-carriers due to the impulsive 
+This is a unique feature of SMA that is likely unimportant to in plamonic generation of hot-carriers due to the impulsive 
 nature of the plasmon field.  Although these transient field effects will not be relevant under
 solar illumination conditions, we anticipate that future work that combines the ability to treat transient effects with 
-a more realistic description of the underlying electronic structure will be an important tool to use, particularly in conjunction with
+a more realistic description of the underlying electronic structure will be an important tool to use, particularly in conjuction with
 time-resolved spectroscopies, to provide further fundamental insight into energy transport and relaxation processes
 in composite structures that support SMA.}   
 
@@ -202,10 +202,11 @@ ground-state configuration (see Supporting Information and Figure S4 for more de
 
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
-this work neglects excited-state thermalization contributions from electron-electron scattering. 
-\textcolor{red}{The underlying simplicity of the Hamiltonian and single-particle basis set also precludes description
-of the material-dependent band structure within this approach.  
-In this work, we explore SMA involving Au and Pt nanoparticles, and we wish to emphasize that the band structure effects 
+this work neglects excited-state thermalization contributions from electron-electron scattering. %1. Band structure / d electron effects:  The modified text for paragraph 1 of page 5 (page 6 in revised MS) continues to give the impression that free electron and ab initio approaches give the same result.  I think the authors may have misinterpreted Ref 24 (Nordlander et al.): that reference compares free electron models with jellium TD-DFT and finds no difference, but both these methods lack detailed band structure.  What that concludes is that electron exchange/correlations effects at the jellium level are negligible.  (Jellium DFT/TD-DFT calculations are not ab initio.)
+%More importantly, in expanding on this point during revision, the authors have mixed up band structure effects including d electrons, which are a single-particle property, with correlation effects, which are many-body.  The correct explanation here is that Ref 24 and 27 show that correlation effects are not particularly important, but Ref 18 and 21 show that band structure effects are very important in gold, but less so in silver due the d band positions.  The rest of the authors response by including silver calculations is greatly appreciated, but the above terminology (correlation vs band structure effects) must be rectified throughout for the updated discussions to be correct.
+\textcolor{red}{The underlying simplicity of the Hamiltonian and single-particle basis set also precludes desciption
+of the material-dependent band-structure within this approach.  
+In this work, we explore SMA involving Au and Pt nanoparticles, and we wish to emphasize that the band-structure effects 
 which are neglected in this work are expected to have an impact on the hot-carrier distributions in both of these metals, 
 as both have energetic gaps between the $d$-band and the Fermi level which are smaller than energy components of the optical fields
 considered here.}  Examination of these two metals within our model still presents considerable value because it provides
@@ -219,12 +220,12 @@ We also choose Au and Pt because the SMA phenomenon
 has been experimentally demonstrated in both metals, including in the work by Sun and co-workers~\cite{ZHX_NatPhoton_2016} which
 considered SiO$_2$ nanospheres decorated with Pt nanoparticles of similar size to the particles considered here, and the work of 
 Zhang {\it et al.}~\cite{ZJM_ACSNano_2016} which considered
-TiO$_2$ nanospheres decorated with large Au nanoparticles.  It has been shown that \textcolor{red}{band structure effects} have less of an impact
+TiO$_2$ nanospheres decorated with large Au nanoparticles.  It has been shown that \textcolor{red}{band-structure effects} have less of an impact
 on hot-carrier dynamics in Ag nanoparticles due to the relatively large ($> 3eV)$ gap between the $d$ bands and the Fermi level~\cite{MLK_ACSNano_2014,Atwater_Review}, and so
 analogous calculations have been performed on Ag-decorated nanospheres showing similar qualitative features
 as results with Au and Pt (see Supporting Information and Figure S3).
   Future work will focus on further developments of this modeling approach to include
-\textcolor{red}{band structure and many-body effects (elaborate)}, and investigation of these effects on the hot-carrier distributions and dynamics resulting from SMA.  It is expected
+\textcolor{red}{band-structure and many-body effects (elaborate)}, and investigation of these effects on the hot-carrier distributions and dynamics resulting from SMA.  It is expected
 that these effects will play a role in the hot-carrier dynamics in several ways, including by changing the available excitation/transition channels
 by mixing of the single-particle states, modifying the transition rates through modification of transition dipole moments, and by enabling
 thermalization of the excited carriers through electron-electron scattering.
