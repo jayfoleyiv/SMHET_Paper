@@ -105,27 +105,58 @@ presents the possibility of realizing unique photocatalytic pathways owing to di
 to those produced by plasmon excitation.    
 
 The push to identify novel structures for mediating hot carrier generation and transfer has been paralleled by 
-efforts to develop theoretical methodologies to elucidate these processes.  The underlying electronic
-structure has been treated both within free-electron models confined by potential wells~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_2015,SAG_ACSPhotonics_2016} (here called
-``particle-in-a-well" [PIW] models), as well as by {\it ab initio} approaches~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
+efforts to develop theoretical methodologies to elucidate these processes.  The underlying metal electronic 
+structure has been treated at levels ranging from free-electron models confined by 
+potential wells~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_2015,SAG_ACSPhotonics_2016} 
+(here called ``particle-in-a-well" [PIW] models), the Jellium model within the local density approximation (Jellium LDA)~\cite{MLK_ACSNano_2014},
+and atomistic density functional theory (DFT)~\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}.
+In totality, these theoretical investigations have yielded a number of valuable insights into 
+the relative importance of particle geometry, material band structure, and electronic correlation effects on hot-carrier
+generation in metal nanostructures. 
 Using PIW models, Govorov and co-workers developed a theory of 
 hot carrier generation within the framework of time-dependent perturbation theory that
 has elucidated a variety of shape- and size-dependent factors for optimizing 
 the hot carrier generation~\cite{GZG_JPCC_2013,ZG_JPCC_2014}.  A similar approach was also pursued by Kumarasinghe {\it et al.} suggesting
 that nanorods are exceptionally good structures for hot carrier generation~\cite{KPB_SciRep_2015}.  Garc\'ia de Abajo and co-workers recently described a 
 quantum master equation approach with an underlying PIW model that elucidated a number of key factors that influence
-hot carrier excitation and decay dynamics~\cite{SAG_ACSPhotonics_2016}.  The utilization of {\it ab initio} approaches by Sundararaman {\it et al} 
-has also provided valuable insights into the role that a metal's band-structure plays
-in determining the efficiency of hot carrier generation, and particularly in the asymmetry between hot-electron
-and hot-hole generation~\cite{SNJ_NatComm_2014}.  Nordlander and co-workers have directly compared free-electron and {\it ab initio} approaches
-and found negligible impact on hot carrier generation and dynamics in Ag nanospheres resulting from electron correlation~\cite{MLK_ACSNano_2014}.  However, many-body effects are not negligible for hot-carrier dynamics
-in general; for example, Bernardi {\it et al} have demonstrated that many-body effects are important 
-in the overall hot carrier dynamics resulting
-from surface plasmon polaritons in gold, and also in the decay mechanisms for hot-carriers in silver~\cite{BMN_NatComm_2015}.
+hot carrier excitation and decay dynamics~\cite{SAG_ACSPhotonics_2016}. Nordlander and co-workers have directly 
+compared free-electron and Jellium-LDA models and found that correlation effects within LDA have a negligible impact 
+on hot carrier generation and dynamics arising from LSPR in Ag nanospheres as compared to geometric effects
+on the same~\cite{MLK_ACSNano_2014}. 
+The utilization of atomistic DFT by Sundararaman {\it et al.}~\cite{SNJ_NatComm_2014}, 
+Louie and co-workers~\cite{BMN_NatComm_2015}, and Brown {\it et al}~\cite{BSN_ACSNano_2016} 
+has provided valuable insight into the role that metal band structure plays
+in determining the efficiency of hot carrier generation, the asymmetry between hot-electron
+and hot-hole generation, and the contributions to hot-carrier relaxation.  An important finding 
+of these studies is that interband transitions play a dominant role in hot carrier generation in gold, but
+are much less important in silver due to the large energetic gap between the Fermi level and the d bands
+in silver.\cite{SNJ_NatComm_2014,BMN_NatComm_2015,MWW_NatComm_2015,BSN_ACSNano_2016}
 
 We develop a novel approach for studying hot carrier dynamics that may arise from arbitrary electromagnetic
 fields, including the unique near-fields that arise from SMA on hybrid dielectric-metal nanoparticles and LSPR
-on noble metal nanoparticles.  Importantly, this method goes beyond a perturbative inclusion of the electric field and enables us to follow the electronic degrees of freedom subject to strong fields with arbitrary time-dependence, which are characteristic of SMA and LSPR.   
+on noble metal nanoparticles.  In our approach, we numerically solve the time-dependent Shcr\"odinger
+equation within the configuration interaction singles (CIS) basis.  The single-particle basis utilized in CIS
+expansion correspond to PIW energy eigenfunctions.  Coulomb repulsion between the electrons is neglected in our current 
+implementation; however, the CIS wavefunction is expanded in terms of antisymmetrized configurations, and so the
+many-electron dynamics obey the Pauli exclusion principle  (see Supporting Information [SI] for more details).  This approach can be considered a time-domain formulation
+of the PIW-based approaches described earlier~\cite{GZG_JPCC_2013,ZG_JPCC_2014,MLK_ACSNano_2014,KPB_SciRep_2015}.  Future 
+extensions to include electron-electron repulsion and uniform nuclear charge would yield a time-domain formulation
+of the Jellium model within mean-field theory if the CIS basis were used, or with higher-order treatment of
+electron-electron correlation if higher levels of excitation were included in the many-electron wavefunction.  Such extensions
+could prove valuable for elucidating the role of correlation effects on electronic dynamics arising from SMA. 
+
+Importantly, our method goes beyond a perturbative inclusion of the electric field and enables 
+us to follow the electronic degrees of freedom subject to strong fields with arbitrary time-dependence, which are characteristic of SMA.   
+Specifically, the explicit time-dependence of this approach allows us to capture transitions that become 
+important as the nearfields from the scattering resonances continue to interact with the metal electrons 
+for 10s to 100s of femtoseconds.  Over these timescales, population accumulates in  
+various excited configurations and transitions between different excited configurations become important to the dynamics.  
+This is a unique feature of SMA that is likely unimportant to in plasmonic generation of hot-carriers due to the impulsive 
+nature of the plasmon field.  Although these transient field effects will not be relevant 
+in photocatalytic applications, we anticipate that future work that combines the ability to treat transient effects with 
+a more realistic description of the underlying electronic structure will be an important tool to use, particularly in conjunction with
+time-resolved spectroscopies, to provide further fundamental insight into energy transport and relaxation processes
+in composite structures that support SMA.   
 
 We consider the electronic degrees of freedom on the metal nanoparticle subject to the time-dependent Hamiltonian 
 \begin{equation}\label{eq:TDHam}
@@ -138,7 +169,7 @@ using a commercial simulator based on the finite-difference time-domain [FDTD] m
 Incorporating  ${\bf E}(t)$ from these FDTD simulations into the time-dependent Hamiltonian enables us to investigate the unique ways
 in which the electronic degrees of freedom evolve under the influence of the distinct time-varying fields that result
 from LSPR and from dielectric scattering resonances, allowing us a unique window into the hot carrier dynamics resulting from LSPR as compared
-to SMA.  Further details on the FDTD simulations can be found in the Supplementary Information [SI]. 
+to SMA.  Further details on the FDTD simulations can be found in the SI. 
 
 The many-electron wavefunction of the metal nanoparticles is expanded in terms of a configuration-interaction expansion that
 includes all singly-excited configurations~\cite{Szabo},
@@ -175,11 +206,10 @@ ground-state configuration (see Supporting Information and Figure S4 for more de
 
 Given the simplicity of the underlying electronic Hamiltonian, the field-free Hamiltonian matrix is diagonal, and only the dipolar
 interaction of the nanoparticle with the external field can induce transitions among the electronic configurations, hence the treatment in 
-this work neglects excited-state thermalization contributions from electron-electron scattering.  
-As shown in previous work, the inclusion of many-body effects can impact the calculation
-of hot-carrier distributions when transitions from $d$ bands are relevant, which is in principle whenever the perturbing
-field contains frequency components that overlap with interband transitions involving $d$ bands~\cite{MLK_ACSNano_2014,BMN_NatComm_2015, Atwater_Review}.  
-In this work, we explore SMA involving Au and Pt nanoparticles, and we wish to emphasize that the many-body effects 
+this work neglects excited-state thermalization contributions from electron-electron scattering. 
+The underlying simplicity of the Hamiltonian and single-particle basis set also precludes description
+of the material-dependent band structure within this approach.  
+In this work, we explore SMA involving Au and Pt nanoparticles, and we wish to emphasize that the band structure effects 
 which are neglected in this work are expected to have an impact on the hot-carrier distributions in both of these metals, 
 as both have energetic gaps between the $d$-band and the Fermi level which are smaller than energy components of the optical fields
 considered here.  Examination of these two metals within our model still presents considerable value because it provides
@@ -193,14 +223,17 @@ We also choose Au and Pt because the SMA phenomenon
 has been experimentally demonstrated in both metals, including in the work by Sun and co-workers~\cite{ZHX_NatPhoton_2016} which
 considered SiO$_2$ nanospheres decorated with Pt nanoparticles of similar size to the particles considered here, and the work of 
 Zhang {\it et al.}~\cite{ZJM_ACSNano_2016} which considered
-TiO$_2$ nanospheres decorated with large Au nanoparticles.  It has been shown that many-body effects have less of an impact
+TiO$_2$ nanospheres decorated with large Au nanoparticles.  It has been shown that band structure effects have less of an impact
 on hot-carrier dynamics in Ag nanoparticles due to the relatively large ($> 3eV)$ gap between the $d$ bands and the Fermi level~\cite{MLK_ACSNano_2014,Atwater_Review}, and so
 analogous calculations have been performed on Ag-decorated nanospheres showing similar qualitative features
 as results with Au and Pt (see Supporting Information and Figure S3).
-  Future work will focus on further developments of this modeling approach to include
-many-body effects, and investigation of these effects on the hot-carrier distributions and dynamics resulting from SMA.  It is expected
-that these effects will play a role in the hot-carrier dynamics in several ways, including by changing the available excitation/transition channels
-by mixing of the single-particle states, modifying the transition rates through modification of transition dipole moments, and by enabling
+Future work that simulates the long-time electronic dynamics while also capturing band structure
+and many-body effects would be valuable for further elucidating fundamental aspects of hot-carrier dynamics driven by SMA.  
+It is expected
+that both of these effects will play a role in the hot-carrier dynamics in a variety of ways, including by changing the 
+available excitation/transition channels
+by mixing of the single-particle states, modifying the transition rates through 
+modification of transition dipole moments, and by enabling
 thermalization of the excited carriers through electron-electron scattering.
 
 Because of the diagonal nature of the field-free Hamiltonian, each configuration $|\Phi_i^a\rangle$ is an eigenfunction
@@ -415,8 +448,9 @@ The authors declare no competing financial interest.
 This work was performed, in part, utilizing resources at
 the Center for Nanoscale Materials, a US Department of Energy, Office of Science, Office of
 Basic Energy Sciences User Facility (contract no. DE-AC02-06CH11357).
-JJF Acknowledges the College of Science and Health for startup support.
-J.C. and N.E. acknowledge the NSF-GS-LSAMP for support.  K.F. acknowledges the WPU CFR for support.
+JJF Acknowledges the College of Science and Health and the Center for Research at William Paterson University
+for startup and summer support.  J.C. and N.E. acknowledge the NSF-GS-LSAMP for 
+support.  K.F. acknowledges the WPU Center for Research for support.
 
 
 \bibliography{SMHET} 
