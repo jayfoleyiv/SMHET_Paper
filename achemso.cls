@@ -73,7 +73,7 @@
 \newcommand*\acs@journal{jacsat}
 \newcommand*\acs@layout{traditional}
 \newcommand*\acs@manuscript{article}
-\newcommand*\acs@maxauthors{15}
+\newcommand*\acs@maxauthors{99}
 \define@key{acs}{journal}{%
   \def\acs@journal{#1}%
 }
